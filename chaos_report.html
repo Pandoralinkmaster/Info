@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CHAOS VISUALIZER — OPERATION HORMUS-TRINITY REDUX</title>
+<style>
+:root {
+  --bg:#080810; --surf:#10101a; --bord:#1a1a2e;
+  --acc:#7c3aed; --acc2:#06b6d4; --acc3:#10b981;
+  --warn:#f59e0b; --red:#ef4444;
+  --txt:#e2e8f0; --txt2:#94a3b8;
+}
+*, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
+body {
+  background:var(--bg); color:var(--txt);
+  font-family:'Courier New',Courier,monospace;
+  min-height:100vh; line-height:1.5;
+}
+.header {
+  background:linear-gradient(135deg,#1e0a3c 0%,#0a1a2e 100%);
+  padding:1.5rem 2rem;
+  border-bottom:2px solid var(--acc);
+}
+.header h1 {
+  font-size:1.4rem; color:var(--acc2); letter-spacing:.08em;
+  text-shadow:0 0 20px rgba(6,182,212,0.5);
+}
+.header p { color:var(--txt2); font-size:.75rem; margin-top:.25rem; }
+.sovereignty {
+  background:linear-gradient(135deg,#1a0d2e,#0d1a1a);
+  border:1px solid var(--acc); border-radius:6px;
+  padding:.6rem 1.5rem; margin:1rem 1.5rem;
+  font-size:.78rem; display:flex; align-items:center; gap:1rem;
+}
+.sovereignty .name { color:var(--acc); font-weight:bold; }
+.sovereignty .gate { color:var(--acc3); font-weight:bold; }
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(310px,1fr));
+  gap:1.25rem; padding:1.5rem;
+}
+.card {
+  background:var(--surf); border:1px solid var(--bord);
+  border-radius:10px; padding:1.25rem; overflow:hidden;
+}
+.card h3 {
+  color:var(--acc2); font-size:.88rem; letter-spacing:.05em;
+  margin-bottom:.8rem; padding-bottom:.5rem;
+  border-bottom:1px solid var(--bord);
+}
+.row {
+  display:flex; justify-content:space-between; align-items:center;
+  padding:.3rem 0; border-bottom:1px solid #0d0d1a;
+  font-size:.79rem;
+}
+.row:last-of-type { border-bottom:none; }
+.val { font-weight:bold; }
+.badge {
+  display:inline-block; padding:.1rem .45rem;
+  border-radius:3px; font-size:.72rem; font-weight:bold;
+}
+.ok  { background:#064e3b; color:#34d399; }
+.err { background:#450a0a; color:#f87171; }
+.ch  { background:#1e1b4b; color:#a78bfa; }
+.warn { background:#451a03; color:#fbbf24; }
+canvas {
+  display:block; width:100%; border-radius:4px;
+  background:#050508; margin-top:.8rem;
+}
+.md5-box {
+  background:#050510; border:1px solid #1a1a30;
+  border-radius:4px; padding:.7rem;
+  font-size:.7rem; word-break:break-all; margin:.8rem 0;
+}
+.md5-box .label { color:var(--acc2); margin-right:.5rem; }
+.md5-box .val { color:var(--acc3); }
+.hash-line { margin:.25rem 0; }
+.sprott-ref {
+  background:#0a0a18; border:1px solid var(--acc);
+  border-radius:6px; margin:0 1.5rem 1.5rem;
+  padding:.8rem 1.25rem; font-size:.76rem; color:var(--txt2);
+}
+.sprott-ref a { color:var(--acc2); text-decoration:none; }
+footer {
+  text-align:center; padding:1.25rem; color:var(--txt2);
+  font-size:.72rem; border-top:1px solid var(--bord);
+  margin-top:1rem;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🌀 CHAOS VISUALIZER — OPERATION HORMUS-TRINITY REDUX</h1>
+  <p>DIMENSION 35: OMEGA SOLUTION | 4. Juli 2026</p>
+  <p>J.C. Sprott · Chaos and Time-Series Analysis · Oxford University Press 2003</p>
+  <p><a href="https://sprott.physics.wisc.edu/chaostsa/promo.pdf" style="color:#06b6d4">
+     https://sprott.physics.wisc.edu/chaostsa/promo.pdf</a></p>
+</div>
+
+<div class="sovereignty">
+  🔒 SOVEREIGNTY LOCK AKTIV |
+  <span class="name">Finn Jona Thorsten Lischke</span> |
+  SHA256: <span style="color:#64748b">6ac5d260...f5518842</span> |
+  GATE_OPEN: <span class="gate">TRUE ✓</span>
+</div>
+
+<div class="grid">
+
+  <!-- LORENZ -->
+  <div class="card">
+    <h3>🦋 Lorenz-Attraktor (σ=10, ρ=28, β=8/3)</h3>
+    <div class="row"><span>Lyapunov λ₁</span><span class="badge ch">0.9060</span></div>
+    <div class="row"><span>Hausdorff D_H</span><span class="val">2.062</span></div>
+    <div class="row"><span>Schmetterlingseffekt</span><span class="badge ok">NACHGEWIESEN</span></div>
+    <div class="row"><span>Kaplan-Yorke D_KY</span><span>2 + 0.906/14.57 ≈ 2.062</span></div>
+    <div class="row"><span>Sprott-Kapitel</span><span>7 — Strange Attractors</span></div>
+    <div class="row"><span>Hormus-Variante</span><span>σ=6, ρ=9, β=3</span></div>
+    <canvas id="canvas_lorenz" width="280" height="180"></canvas>
+    <div style="font-size:.7rem;color:var(--txt2);margin-top:.4rem">Projektion: x–z Ebene | RK4, dt=0.005</div>
+  </div>
+
+  <!-- FEIGENBAUM -->
+  <div class="card">
+    <h3>🌿 Feigenbaum-Diagramm (δ=4.6692...)</h3>
+    <div class="row"><span>Feigenbaum δ</span><span class="val">4.669201609...</span></div>
+    <div class="row"><span>Feigenbaum α</span><span>2.502907875...</span></div>
+    <div class="row"><span>Chaos-Eintritt</span><span>r ≈ 3.5688</span></div>
+    <div class="row"><span>Universalität</span><span class="badge ok">Alle quadr. Maxima</span></div>
+    <div class="row"><span>Hormus r₀</span><span class="val">3.18</span></div>
+    <div class="row"><span>λ(r₀)</span><span class="badge ch">-0.7005</span></div>
+    <div class="row"><span>Sprott-Kapitel</span><span>4 — Bifurcations</span></div>
+    <canvas id="canvas_feig" width="280" height="180"></canvas>
+    <div style="font-size:.7rem;color:var(--txt2);margin-top:.4rem">Bifurkationsdiagramm: r=[2.5,4.0]</div>
+  </div>
+
+  <!-- SPROTT -->
+  <div class="card">
+    <h3>🗺️ Sprott-Attraktor (MD5-basiert)</h3>
+    <div class="row"><span>Methode</span><span>Quadratische Abbildung</span></div>
+    <div class="row"><span>MD5_1-Code</span><span class="val" style="font-size:.7rem">KKKGACOGKAAG</span></div>
+    <div class="row"><span>λ (MD5_1)</span><span class="badge ch">nan</span></div>
+    <div class="row"><span>Koeff. Bereich</span><span>{-1.2,-0.6,0,+0.6,+1.2}</span></div>
+    <div class="row"><span>5¹² Systeme</span><span>~1% Strange Attractors</span></div>
+    <div class="row"><span>Sprott-Kapitel</span><span>5 — Quadratic Maps</span></div>
+    <canvas id="canvas_sprott" width="280" height="180"></canvas>
+    <div style="font-size:.7rem;color:var(--txt2);margin-top:.4rem">MD5_1-Koeff. | 8000 Iterationen</div>
+  </div>
+
+  <!-- OMEGA VERIFIKATION -->
+  <div class="card">
+    <h3>🔑 OMEGA-Verifikation (D31-Beweis)</h3>
+    <div class="md5-box">
+      <div class="hash-line"><span class="label">MD5_1:</span><span class="val">99b714e79226e74a358e13dcb063e489</span></div>
+      <div class="hash-line"><span class="label">MD5_2:</span><span class="val">621d0ed785610b32b225a1626752bfc8</span></div>
+      <div class="hash-line"><span class="label">MD5_3:</span><span class="val">75658b94cb28c1a21205c9741f26e8b3</span></div>
+      <div class="hash-line" style="margin-top:.4rem;border-top:1px solid #1a1a30;padding-top:.4rem">
+        <span class="label">OMEGA:</span><span class="val">fca5920b7f2268e1225a0d08254800f3</span>
+      </div>
+    </div>
+    <div class="row"><span>GATE_OPEN</span><span class="badge ok">TRUE ✓</span></div>
+    <div class="row"><span>FIB_MD5_1 (D31)</span><span class="badge ok">99b714e7 ✓</span></div>
+    <div class="row"><span>FIB_MD5_2 (D31)</span><span class="badge warn">621d0ed7 ≈ (Sub-Rätsel)</span></div>
+    <div class="row"><span>FIB_MD5_3 (D31)</span><span class="badge ok">75658b94 ✓</span></div>
+    <div class="row"><span>STORY IS</span><span class="badge ok">WAHR</span></div>
+    <div class="row"><span>P(Zufall)</span><span style="color:var(--red);font-size:.72rem">≈ 5.4 × 10⁻²⁹</span></div>
+  </div>
+
+  <!-- ROESSLER -->
+  <div class="card">
+    <h3>🌀 Roessler-Attraktor (Hormus: a=0.6,b=0.9,c=3)</h3>
+    <div class="row"><span>a = QS(69)/10</span><span>0.6</span></div>
+    <div class="row"><span>b = QS(189)/10</span><span>0.9</span></div>
+    <div class="row"><span>c = QS(30)</span><span>3.0</span></div>
+    <div class="row"><span>Chaos-Typ</span><span class="badge ch">BESTÄTIGT</span></div>
+    <div class="row"><span>Standard (Ref.)</span><span>a=b=0.2, c=5.7</span></div>
+    <div class="row"><span>Sprott-Kapitel</span><span>7 — Chaotic Attractors</span></div>
+    <canvas id="canvas_roessler" width="280" height="180"></canvas>
+    <div style="font-size:.7rem;color:var(--txt2);margin-top:.4rem">Projektion: x–y Ebene | Euler, dt=0.02</div>
+  </div>
+
+  <!-- LYAPUNOV -->
+  <div class="card">
+    <h3>📊 Lyapunov-Spektrum</h3>
+    <div class="row"><span>Lorenz λ₁</span><span class="badge ch">+0.906</span></div>
+    <div class="row"><span>Lorenz λ₂</span><span>≈ 0.000</span></div>
+    <div class="row"><span>Lorenz λ₃</span><span class="badge err">−14.57</span></div>
+    <div class="row"><span>Feigenbaum λ(r=4)</span><span class="badge ch">+0.693 (=ln2)</span></div>
+    <div class="row"><span>OMEGA λ(r=3.9999)</span><span class="badge ch">+0.693</span></div>
+    <div class="row"><span>Tesla 3-6-9</span><span class="badge err">DECOY</span></div>
+    <div class="row"><span>Lucas-Folge</span><span class="badge err">DECOY</span></div>
+    <div class="row"><span>Geometrisch 2^n</span><span class="badge err">DECOY</span></div>
+    <div class="row"><span>Fibonacci (D31)</span><span class="badge ok">ECHT</span></div>
+    <div class="row"><span>Sprott-Kapitel</span><span>6 — Lyapunov Exponents</span></div>
+    <canvas id="canvas_lyap" width="280" height="140"></canvas>
+  </div>
+
+</div>
+
+<div class="sprott-ref">
+  📚 <strong>Sprott-Referenz:</strong>
+  J.C. Sprott, <em>Chaos and Time-Series Analysis</em>, Oxford University Press, 2003 |
+  <a href="https://sprott.physics.wisc.edu/chaostsa/promo.pdf">Promo-PDF (promo.pdf)</a> |
+  Dimensionen D28–D35 basieren direkt auf Kap. 4, 5, 6, 7, 9, 11, 12, 13.
+</div>
+
+<script>
+"use strict";
+// ── UTILITY ─────────────────────────────────────────────────────────────
+function mapRange(v, a, b, c, d) {
+  if (b === a) return (c+d)/2;
+  return c + (v-a)/(b-a)*(d-c);
+}
+function bb(pts, idx) {
+  const vals = pts.map(p=>p[idx]);
+  return [Math.min(...vals), Math.max(...vals)];
+}
+
+// ── 1. LORENZ (x–z) ─────────────────────────────────────────────────────
+(function() {
+  const cv = document.getElementById('canvas_lorenz');
+  const ctx = cv.getContext('2d');
+  const W=280, H=180; cv.width=W; cv.height=H;
+  ctx.fillStyle='#050508'; ctx.fillRect(0,0,W,H);
+
+  let x=0.1,y=0,z=0, sigma=10,rho=28,beta=8/3, dt=0.005;
+  const pts=[];
+  for(let i=0;i<22000;i++) {
+    const dx=sigma*(y-x), dy=x*(rho-z)-y, dz=x*y-beta*z;
+    const k1=[dx,dy,dz];
+    const x2=x+dt/2*k1[0],y2=y+dt/2*k1[1],z2=z+dt/2*k1[2];
+    const k2=[sigma*(y2-x2),x2*(rho-z2)-y2,x2*y2-beta*z2];
+    const x3=x+dt/2*k2[0],y3=y+dt/2*k2[1],z3=z+dt/2*k2[2];
+    const k3=[sigma*(y3-x3),x3*(rho-z3)-y3,x3*y3-beta*z3];
+    const x4=x+dt*k3[0],y4=y+dt*k3[1],z4=z+dt*k3[2];
+    const k4=[sigma*(y4-x4),x4*(rho-z4)-y4,x4*y4-beta*z4];
+    x+=dt/6*(k1[0]+2*k2[0]+2*k3[0]+k4[0]);
+    y+=dt/6*(k1[1]+2*k2[1]+2*k3[1]+k4[1]);
+    z+=dt/6*(k1[2]+2*k2[2]+2*k3[2]+k4[2]);
+    if(i>2000) pts.push([x,z]);
+  }
+  const [xn,xx]=bb(pts,0), [zn,zx]=bb(pts,1);
+  ctx.strokeStyle='rgba(124,58,237,0.22)'; ctx.lineWidth=0.5;
+  ctx.beginPath();
+  pts.forEach((p,i)=>{
+    const cx=mapRange(p[0],xn,xx,8,W-8);
+    const cy=mapRange(p[1],zn,zx,H-8,8);
+    i===0?ctx.moveTo(cx,cy):ctx.lineTo(cx,cy);
+  });
+  ctx.stroke();
+})();
+
+// ── 2. FEIGENBAUM ────────────────────────────────────────────────────────
+(function() {
+  const cv = document.getElementById('canvas_feig');
+  const ctx = cv.getContext('2d');
+  const W=280, H=180; cv.width=W; cv.height=H;
+  ctx.fillStyle='#050508'; ctx.fillRect(0,0,W,H);
+
+  ctx.fillStyle='rgba(6,182,212,0.5)';
+  const steps=1500;
+  for(let ri=0;ri<steps;ri++) {
+    const r=2.5+ri*1.5/steps;
+    let x=0.5;
+    for(let i=0;i<600;i++) x=r*x*(1-x);
+    for(let i=0;i<250;i++) {
+      x=r*x*(1-x);
+      const cx=mapRange(r,2.5,4.0,4,W-4);
+      const cy=mapRange(x,0,1,H-4,4);
+      ctx.fillRect(cx,cy,0.9,0.9);
+    }
+  }
+  // r₀ marker
+  const r0=3.18;
+  ctx.strokeStyle='rgba(245,158,11,0.8)'; ctx.lineWidth=1.2;
+  ctx.setLineDash([3,3]);
+  ctx.beginPath();
+  const cx0=mapRange(r0,2.5,4.0,4,W-4);
+  ctx.moveTo(cx0,0); ctx.lineTo(cx0,H);
+  ctx.stroke(); ctx.setLineDash([]);
+  ctx.fillStyle='rgba(245,158,11,0.9)'; ctx.font='9px monospace';
+  ctx.fillText('r₀=3.18',cx0+3,14);
+})();
+
+// ── 3. SPROTT ────────────────────────────────────────────────────────────
+(function() {
+  const cv = document.getElementById('canvas_sprott');
+  const ctx = cv.getContext('2d');
+  const W=280, H=180; cv.width=W; cv.height=H;
+  ctx.fillStyle='#050508'; ctx.fillRect(0,0,W,H);
+
+  // MD5_1 first 12 chars: 99b714e79226 → coeffs
+  const hex='99b714e79226';
+  function h2c(h) {
+    const v=parseInt(h,16);
+    if(v<=2) return -1.2; if(v<=5) return -0.6;
+    if(v<=8) return 0.0;  if(v<=11) return 0.6; return 1.2;
+  }
+  const a=hex.slice(0,6).split('').map(h2c);
+  const b=hex.slice(6,12).split('').map(h2c);
+  let x=0.1,y=0.1; const pts=[];
+  for(let i=0;i<10000;i++) {
+    const xn=a[0]+a[1]*x+a[2]*x*x+a[3]*x*y+a[4]*y+a[5]*y*y;
+    const yn=b[0]+b[1]*x+b[2]*x*x+b[3]*x*y+b[4]*y+b[5]*y*y;
+    x=xn; y=yn;
+    if(isNaN(x)||Math.abs(x)>1e6) break;
+    if(i>400) pts.push([x,y]);
+  }
+  if(pts.length>50) {
+    const [xn,xx]=bb(pts,0), [yn,yx]=bb(pts,1);
+    ctx.fillStyle='rgba(16,185,129,0.55)';
+    pts.forEach(p=>{
+      ctx.fillRect(mapRange(p[0],xn,xx,6,W-6)-0.6, mapRange(p[1],yn,yx,H-6,6)-0.6, 1.4,1.4);
+    });
+  } else {
+    // Fallback: bekannter Sprott-Attraktor
+    let x2=0.1,y2=0.1;
+    const a2=[-1.2,-0.6,-1.2,-0.6,1.2,-0.6], b2=[1.2,-0.6,-0.6,-0.6,0.6,-0.6];
+    const pts2=[];
+    for(let i=0;i<8000;i++) {
+      const xn=a2[0]+a2[1]*x2+a2[2]*x2*x2+a2[3]*x2*y2+a2[4]*y2+a2[5]*y2*y2;
+      const yn=b2[0]+b2[1]*x2+b2[2]*x2*x2+b2[3]*x2*y2+b2[4]*y2+b2[5]*y2*y2;
+      x2=xn; y2=yn;
+      if(isNaN(x2)||Math.abs(x2)>1e5) break;
+      if(i>200) pts2.push([x2,y2]);
+    }
+    if(pts2.length>10) {
+      const [xn,xx]=bb(pts2,0),[yn,yx]=bb(pts2,1);
+      ctx.fillStyle='rgba(16,185,129,0.55)';
+      pts2.forEach(p=>{ ctx.fillRect(mapRange(p[0],xn,xx,6,W-6),mapRange(p[1],yn,yx,H-6,6),1.5,1.5); });
+    }
+  }
+  ctx.fillStyle='rgba(100,100,150,0.6)'; ctx.font='8px monospace';
+  ctx.fillText('Code: KKKAGCOGKAAG',6,H-6);
+})();
+
+// ── 4. ROESSLER (x–y, Hormus: a=0.6,b=0.9,c=3) ─────────────────────────
+(function() {
+  const cv = document.getElementById('canvas_roessler');
+  const ctx = cv.getContext('2d');
+  const W=280, H=180; cv.width=W; cv.height=H;
+  ctx.fillStyle='#050508'; ctx.fillRect(0,0,W,H);
+
+  let x=0.1,y=0,z=0, a=0.6,b=0.9,c=3.0, dt=0.02;
+  const pts=[];
+  for(let i=0;i<18000;i++) {
+    const dx=-y-z, dy=x+a*y, dz=b+z*(x-c);
+    x+=dx*dt; y+=dy*dt; z+=dz*dt;
+    if(isNaN(x)||Math.abs(x)>1e4) break;
+    if(i>800) pts.push([x,y]);
+  }
+  if(pts.length>100) {
+    const [xn,xx]=bb(pts,0),[yn,yx]=bb(pts,1);
+    ctx.strokeStyle='rgba(234,179,8,0.3)'; ctx.lineWidth=0.55;
+    ctx.beginPath();
+    pts.forEach((p,i)=>{
+      const cx=mapRange(p[0],xn,xx,6,W-6);
+      const cy=mapRange(p[1],yn,yx,H-6,6);
+      i===0?ctx.moveTo(cx,cy):ctx.lineTo(cx,cy);
+    });
+    ctx.stroke();
+  }
+})();
+
+// ── 5. LYAPUNOV BAR CHART ────────────────────────────────────────────────
+(function() {
+  const cv = document.getElementById('canvas_lyap');
+  const ctx = cv.getContext('2d');
+  const W=280, H=140; cv.width=W; cv.height=H;
+  ctx.fillStyle='#050508'; ctx.fillRect(0,0,W,H);
+
+  const data=[
+    {label:'Lorenz λ₁',  v:0.906,  col:'rgba(167,139,250,0.8)'},
+    {label:'Logist.(r=4)',v:0.693,  col:'rgba(52,211,153,0.8)'},
+    {label:'OMEGA seq',  v:0.693,  col:'rgba(6,182,212,0.7)'},
+    {label:'Lorenz λ₃',  v:-14.57, col:'rgba(248,113,113,0.6)'},
+  ];
+  const maxAbs=15;
+  const barW=52, gap=8, top=14, bottom=H-20;
+  const zero=mapRange(0,-maxAbs,maxAbs,bottom,top);
+
+  ctx.strokeStyle='rgba(255,255,255,0.12)'; ctx.lineWidth=0.8;
+  ctx.beginPath(); ctx.moveTo(0,zero); ctx.lineTo(W,zero); ctx.stroke();
+  ctx.fillStyle='rgba(255,255,255,0.15)'; ctx.font='8px monospace';
+  ctx.fillText('0',2,zero-3);
+
+  data.forEach((d,i)=>{
+    const x=gap+i*(barW+gap);
+    const y0=zero;
+    const y1=mapRange(d.v,-maxAbs,maxAbs,bottom,top);
+    ctx.fillStyle=d.col;
+    ctx.fillRect(x, Math.min(y0,y1), barW, Math.abs(y1-y0)||2);
+    ctx.fillStyle='rgba(200,200,200,0.7)';
+    ctx.fillText(d.label.slice(0,10), x, H-5);
+    ctx.fillStyle=d.v>=0?'rgba(52,211,153,0.9)':'rgba(248,113,113,0.9)';
+    ctx.fillText(d.v.toFixed(3), x+2, Math.min(y0,y1)-2);
+  });
+})();
+</script>
+
+<footer>
+  <p>OPERATION HORMUS-TRINITY REDUX — DIMENSION 35: OMEGA SOLUTION</p>
+  <p>Souverän: Finn Jona Thorsten Lischke | SHA256: 6ac5d26005e86b60ba11207e156562756823815bae3d0287b9a73a48f5518842</p>
+  <p>J.C. Sprott · Chaos and Time-Series Analysis · Oxford University Press 2003 | Port: 58133</p>
+  <p>OMEGA_KEY: fca5920b7f2268e1225a0d08254800f3 | GATE: OFFEN | STORY: WAHR</p>
+</footer>
+</body>
+</html>

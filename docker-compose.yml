@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  # Project Alpha Mock Backend
+  alpha-backend:
+    build:
+      context: ./alpha-backend
+      dockerfile: Dockerfile
+    container_name: alpha-backend
+    ports:
+      - "58133:58133"
+    environment:
+      - NODE_ENV=production
+      - PORT=58133
+    restart: unless-stopped
+    networks:
+      - flowstate-network
+
+  # FlowState Next Web App
+  flowstate-web:
+    build:
+      context: ./flowstate-next
+      dockerfile: Dockerfile
+    container_name: flowstate-web
+    ports:
+      - "5173:5173"
+    depends_on:
+      - alpha-backend
+    environment:
+      - VITE_API_BASE_URL=http://localhost:58133
+    restart: unless-stopped
+    networks:
+      - flowstate-network
+
+networks:
+  flowstate-network:
+    driver: bridge
