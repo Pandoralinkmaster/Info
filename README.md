@@ -1,43 +1,18 @@
-# FlowState Next & Project Alpha Ecosystem
+# Blocklist for Pi-Hole
+Handpicked custom blocklist/blacklist annoying ads, trackers, scam sites, email spam websites, malware, honeypot traps and govs!
 
-Dieses Paket enthält das vollständige, erweiterte Ökosystem von **FlowState Next** und **Project Alpha Mobile**, inklusive eines Mock-Backends für die lokale Entwicklung.
+![](https://raw.githubusercontent.com/einyx/pihole-blocklist/master/img/logo.jpg)
 
-## Struktur
+|Listname|URL|
+|--|--|
+|blacklist|https://raw.githubusercontent.com/einyx/einyx-blocklist/master/|
 
-- `/flowstate-next`: Die Haupt-Web-App (Vite + React + TypeScript).
-- `/project-alpha-mobile`: Die mobile App-Komponente (Expo + React Native).
-- `/alpha-backend`: Ein Node.js Express Mock-Backend zur Simulation der Project Alpha API.
+**INFO:**
 
-## Installation & Start
-
-### 1. Backend (Optional für lokale API-Tests)
-```bash
-cd alpha-backend
-npm install
-npm start
-```
-Das Backend läuft auf `http://localhost:58133`.
-
-### 2. FlowState Next (Web)
-```bash
-cd flowstate-next
-npm install
-npm run dev
-```
-
-### 3. Project Alpha Mobile (Mobile)
-```bash
-cd project-alpha-mobile
-npm install
-npx expo start
-```
-
-## Features & Integration
-- **Zero-Trust Mesh Network Dashboard**: Überwachung von Mesh-Geräten und Sicherheit.
-- **JayJay KI**: Integrierter Sprachassistent (Mockup).
-- **BTC Wallet**: Transaktionsübersicht und Management.
-- **Project Alpha Integration**: Direkte Anbindung an das Alpha-Backend für Engine-Status, Nodes und Security Catalog.
-- **Dark Mode / Matrix Theme**: Anpassbare Cyberpunk-Ästhetik.
+**Feel free to share it with others!** I will try to keep it up-to-date regularly.
 
 ---
-Erstellt von Manus AI.
+
+Other recommendations/useful stuff, check it out.
+|GitHub||
+|--|--|

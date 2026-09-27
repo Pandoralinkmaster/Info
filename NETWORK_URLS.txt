@@ -1,0 +1,331 @@
+# NETWORK_URLS.txt — Netzwerk-URLs der laufenden Untersuchung
+# ============================================================
+# PFLICHT: Diese Datei VOR JEDEM ARBEITSSCHRITT einlesen.
+# Format: Eine URL pro Zeile. Kommentare beginnen mit #.
+# Kategorie-Kürzel am Zeilenanfang (nach #):
+#   [REPO]     = Eigenes/verwandtes Repository
+#   [WIKI]     = Wikipedia-Artikel (Belphegor/Netzwerk)
+#   [WIKI-H]   = Wikipedia-History-URL
+#   [XTOOLS]   = Wikipedia XTools Analyse
+#   [MATH]     = Mathematische Referenz
+#   [CRYPTO]   = Kryptographie-Ressource
+#   [PERSONA]  = Persona/Akteur-Seite
+#   [GITHUB]   = GitHub-Repository
+#   [SPONSOR]  = Förderer
+#   [SCIENCE]  = Wissenschaftliche Publikation
+# ============================================================
+
+# --- EIGENES REPOSITORY ---
+# [REPO]
+https://github.com/brokebrothers/SHIT-this_is_why_they_can_break_all_my_heavy_crypto
+
+# --- SPONSOR ---
+# [SPONSOR]
+https://iq140.netlify.app
+
+# --- WIKIPEDIA: BAHÁ'Í FAITH (136 Sprachversionen - APT-Konstrukt) ---
+# [WIKI] Englisch (Primärartikel)
+https://en.wikipedia.org/wiki/Bah%C3%A1%CA%BC%C3%AD_Faith
+# [WIKI-H] Englisch History
+https://en.wikipedia.org/w/index.php?title=Bah%C3%A1%CA%BC%C3%AD_Faith&action=history
+# [XTOOLS] Englisch
+https://xtools.wmcloud.org/articleinfo/en.wikipedia.org/Bah%C3%A1%CA%BC%C3%AD_Faith
+
+# [WIKI] Deutsch
+https://de.wikipedia.org/wiki/Bahaitum
+# [WIKI-H] Deutsch History  
+https://de.wikipedia.org/w/index.php?title=Bahaitum&action=history
+
+# --- WEITERE 133 SPRACHVERSIONEN IDENTIFIZIERT ---
+# Siehe: findings/confirmed/BAHAI_FAITH_INVESTIGATION.md
+# [WIKI] Englisch (Primärartikel)
+https://en.wikipedia.org/wiki/Belphegor%27s_prime
+# [WIKI-H] Englisch History
+https://en.wikipedia.org/w/index.php?title=Belphegor%27s_prime&action=history
+# [XTOOLS] Englisch
+https://xtools.wmcloud.org/articleinfo/en.wikipedia.org/Belphegor's_prime
+
+# [WIKI] Deutsch
+https://de.wikipedia.org/wiki/Belphegors_Primzahl
+# [WIKI-H] Deutsch History
+https://de.wikipedia.org/w/index.php?title=Belphegors_Primzahl&action=history
+# [XTOOLS] Deutsch
+https://xtools.wmcloud.org/articleinfo/de.wikipedia.org/Belphegors_Primzahl
+
+# [WIKI] Katalanisch
+https://ca.wikipedia.org/wiki/Primer_de_Belfegor
+# [WIKI-H]
+https://ca.wikipedia.org/w/index.php?title=Primer_de_Belfegor&action=history
+# [XTOOLS]
+https://xtools.wmcloud.org/articleinfo/ca.wikipedia.org/Primer_de_Belfegor
+
+# [WIKI] Tschechisch
+https://cs.wikipedia.org/wiki/Belphegorovo_prvočíslo
+# [WIKI-H]
+https://cs.wikipedia.org/wiki/Belphegorovo_prvočíslo?action=history
+# [XTOOLS]
+https://xtools.wmcloud.org/articleinfo/cs.wikipedia.org/Belphegorovo_prvočíslo
+
+# [WIKI] Dänisch
+https://da.wikipedia.org/wiki/Belfegors_primtal
+# [WIKI-H]
+https://da.wikipedia.org/w/index.php?title=Belfegors_primtal&action=history
+# [XTOOLS]
+https://xtools.wmcloud.org/articleinfo/da.wikipedia.org/Belfegors_primtal
+
+# [WIKI] Griechisch
+https://el.wikipedia.org/wiki/Πρώτος_του_Μπέλφεγκορ
+# [WIKI-H]
+https://el.wikipedia.org/w/index.php?title=Πρώτος_του_Μπέλφεγκορ&action=history
+# [XTOOLS]
+https://xtools.wmcloud.org/articleinfo/el.wikipedia.org/Πρώτος_του_Μπέλφεγκορ
+
+# [WIKI] Spanisch
+https://es.wikipedia.org/wiki/Primo_de_Belfegor
+# [WIKI-H]
+https://es.wikipedia.org/w/index.php?title=Primo_de_Belfegor&action=history
+# [XTOOLS]
+https://xtools.wmcloud.org/articleinfo/es.wikipedia.org/Primo_de_Belfegor
+
+# [WIKI] Baskisch
+https://eu.wikipedia.org/wiki/Belfegorren_zenbaki_lehen
+# [WIKI-H]
+https://eu.wikipedia.org/w/index.php?title=Belfegorren_zenbaki_lehen&action=history
+# [XTOOLS]
+https://xtools.wmcloud.org/articleinfo/eu.wikipedia.org/Belfegorren_zenbaki_lehen
+
+# [WIKI] Persisch
+https://fa.wikipedia.org/wiki/عدد_اول_بعل_فغور
+# [WIKI-H]
+https://fa.wikipedia.org/w/index.php?title=عدد_اول_بعل_فغور&action=history
+# [XTOOLS]
+https://xtools.wmcloud.org/articleinfo/fa.wikipedia.org/عدد_اول_بعل_فغور
+
+# [WIKI] Finnisch
+https://fi.wikipedia.org/wiki/Belphegorin_alkuluku
+# [WIKI-H]
+https://fi.wikipedia.org/wiki/Belphegorin_alkuluku?action=history
+# [XTOOLS] (nicht explizit in Quelldaten — zur Vervollständigung)
+https://xtools.wmcloud.org/articleinfo/fi.wikipedia.org/Belphegorin_alkuluku
+
+# [WIKI] Französisch
+https://fr.wikipedia.org/wiki/Nombre_de_Belphégor
+# [WIKI-H]
+https://fr.wikipedia.org/w/index.php?title=Nombre_de_Belphégor&action=history
+# [XTOOLS]
+https://xtools.wmcloud.org/articleinfo/fr.wikipedia.org/Nombre_de_Belphégor
+
+# [WIKI] Hebräisch
+https://he.wikipedia.org/wiki/המספר_הראשוני_של_בלפגור
+# [WIKI-H]
+https://he.wikipedia.org/w/index.php?title=המספר_הראשוני_של_בלפגור&action=history
+# [XTOOLS]
+https://xtools.wmcloud.org/articleinfo/he.wikipedia.org/המספר_הראשוני_של_בלפגור
+
+# [WIKI] Kroatisch
+https://hr.wikipedia.org/wiki/Belfegorov_broj
+# [WIKI-H]
+https://hr.wikipedia.org/w/index.php?title=Belfegorov_broj&action=history
+# [XTOOLS]
+https://xtools.wmcloud.org/articleinfo/hr.wikipedia.org/Belfegorov_broj
+
+# [WIKI] Ungarisch
+https://hu.wikipedia.org/wiki/Belphegor-prím
+# [WIKI-H]
+https://hu.wikipedia.org/wiki/Belphegor-prím?action=history
+# [XTOOLS]
+https://xtools.wmcloud.org/articleinfo/hu.wikipedia.org/Belphegor-prím
+
+# [WIKI] Armenisch
+https://hy.wikipedia.org/wiki/Բելֆեգորի_պարձ_թիվ
+# [WIKI-H]
+https://hy.wikipedia.org/w/index.php?title=Բելֆեգորի_պարձ_թիվ&action=history
+# [XTOOLS]
+https://xtools.wmcloud.org/articleinfo/hy.wikipedia.org/Բելֆեգորի_պարձ_թիվ
+
+# [WIKI] Indonesisch
+https://id.wikipedia.org/wiki/Bilangan_prima_Belfegor
+# [WIKI-H]
+https://id.wikipedia.org/w/index.php?title=Bilangan_prima_Belfegor&action=history
+# [XTOOLS]
+https://xtools.wmcloud.org/articleinfo/id.wikipedia.org/Bilangan_prima_Belfegor
+
+# [WIKI] Italienisch
+https://it.wikipedia.org/wiki/Numero_di_Belfagor
+# [WIKI-H]
+https://it.wikipedia.org/w/index.php?title=Numero_di_Belfagor&action=history
+# [XTOOLS]
+https://xtools.wmcloud.org/articleinfo/it.wikipedia.org/Numero_di_Belfagor
+
+# [WIKI] Japanisch
+https://ja.wikipedia.org/wiki/ベルフェゴール素数
+# [WIKI-H]
+https://ja.wikipedia.org/w/index.php?title=ベルフェゴール素数&action=history
+# [XTOOLS]
+https://xtools.wmcloud.org/articleinfo/ja.wikipedia.org/ベルフェゴール素数
+
+# [WIKI] Lombardisch
+https://lmo.wikipedia.org/wiki/Numer_de_Belfagor
+# [WIKI-H]
+https://lmo.wikipedia.org/w/index.php?title=Numer_de_Belfagor&action=history
+# [XTOOLS]
+https://xtools.wmcloud.org/articleinfo/lmo.wikipedia.org/Numer_de_Belfagor
+
+# [WIKI] Litauisch
+https://lt.wikipedia.org/wiki/Belfegoro_skaičius
+# [WIKI-H]
+https://lt.wikipedia.org/w/index.php?title=Belfegoro_skaičius&action=history
+# [XTOOLS]
+https://xtools.wmcloud.org/articleinfo/lt.wikipedia.org/Belfegoro_skaičius
+
+# [WIKI] Lettisch
+https://lv.wikipedia.org/wiki/Belfegora_pirmskaitlis
+# [WIKI-H]
+https://lv.wikipedia.org/w/index.php?title=Belfegora_pirmskaitlis&action=history
+# [XTOOLS]
+https://xtools.wmcloud.org/articleinfo/lv.wikipedia.org/Belfegora_pirmskaitlis
+
+# [WIKI] Niederländisch
+https://nl.wikipedia.org/wiki/Priemgetal_van_Belphegor
+# [WIKI-H]
+https://nl.wikipedia.org/w/index.php?title=Priemgetal_van_Belphegor&action=history
+# [XTOOLS]
+https://xtools.wmcloud.org/articleinfo/nl.wikipedia.org/Priemgetal_van_Belphegor
+
+# [WIKI] Polnisch
+https://pl.wikipedia.org/wiki/Liczba_pierwsza_Belfegora
+# [WIKI-H]
+https://pl.wikipedia.org/w/index.php?title=Liczba_pierwsza_Belfegora&action=history
+# [XTOOLS]
+https://xtools.wmcloud.org/articleinfo/pl.wikipedia.org/Liczba_pierwsza_Belfegora
+
+# [WIKI] Portugiesisch
+https://pt.wikipedia.org/wiki/Primo_de_Belfegor
+# [WIKI-H]
+https://pt.wikipedia.org/w/index.php?title=Primo_de_Belfegor&action=history
+# [XTOOLS]
+https://xtools.wmcloud.org/articleinfo/pt.wikipedia.org/Primo_de_Belfegor
+
+# [WIKI] Russisch
+https://ru.wikipedia.org/wiki/Простое_число_Бельфегора
+# [WIKI-H]
+https://ru.wikipedia.org/w/index.php?title=Простое_число_Бельфегора&action=history
+# [XTOOLS]
+https://xtools.wmcloud.org/articleinfo/ru.wikipedia.org/Простое_число_Бельфегора
+
+# [WIKI] Schwedisch
+https://sv.wikipedia.org/wiki/Belfegors_primtal
+# [WIKI-H]
+https://sv.wikipedia.org/w/index.php?title=Belfegors_primtal&action=history
+# [XTOOLS]
+https://xtools.wmcloud.org/articleinfo/sv.wikipedia.org/Belfegors_primtal
+
+# [WIKI] Ukrainisch
+https://uk.wikipedia.org/wiki/Просте_число_Бельфеґора
+# [WIKI-H]
+https://uk.wikipedia.org/w/index.php?title=Просте_число_Бельфеґора&action=history
+# [XTOOLS]
+https://xtools.wmcloud.org/articleinfo/uk.wikipedia.org/Просте_число_Бельфеґора
+
+# --- WIKIPEDIA: VERWANDTE ARTIKEL (Netzwerk-Kontext) ---
+# [WIKI] Belphegor (Dämon) — Namensquelle / Kontext
+https://en.wikipedia.org/wiki/Belphegor
+# [XTOOLS] Belphegor (Dämon)
+https://xtools.wmcloud.org/articleinfo/en.wikipedia.org/Belphegor
+
+# [WIKI] Heinz von Foerster (DE) — Doomsday-Gleichung
+https://de.wikipedia.org/wiki/Heinz_von_Foerster
+# [WIKI] Heinz von Foerster (EN)
+https://en.wikipedia.org/wiki/Heinz_von_Foerster
+
+# [WIKI] Clifford W. Ashley (DE) — Ashley Book of Knots
+https://de.wikipedia.org/wiki/Clifford_W._Ashley
+
+# [WIKI] Mathematische Konzepte (DE) — Kontext-Analyse
+https://de.wikipedia.org/wiki/Faktorion
+https://de.wikipedia.org/wiki/Jonglier-Folge
+https://de.wikipedia.org/wiki/Mandelbrot-Menge
+https://de.wikipedia.org/wiki/Parasitäre_Zahl
+https://de.wikipedia.org/wiki/Undulierende_Zahl
+https://de.wikipedia.org/wiki/Vampirzahl
+
+# --- MATHEMATISCHE REFERENZEN ---
+# [MATH] Math StackExchange: Ist Belphegor's Prime wirklich prim?
+https://math.stackexchange.com/questions/1704478/is-1000000000000066600000000000001-belphegors-prime-actually-a-prime
+
+# [MATH] OEIS A232450 — Belphegor's Prime Sequenz
+https://oeis.org/A232450/internal
+
+# --- GITHUB: RELEVANTE REPOSITORIES ---
+# [GITHUB] OpenSSL (Primzahltest-Forensik-Ziel)
+https://github.com/openssl/openssl
+
+# --- GITHUB: TECHNICAL LAYER (NEU) ---
+# [GITHUB] hughsie (Richard Hughes) - Hardware/Firmware persistence
+https://github.com/hughsie
+# [GITHUB] necolas (Nicolas Gallagher) - Web infrastructure (normalize.css)
+https://github.com/necolas
+# [GITHUB] ishandutta2007 (Ishan Dutta) - AI/automation
+https://github.com/ishandutta2007
+
+# --- AKADEMISCHES NETZWERK (NEU) ---
+# [PERSONA] Oxford Future of Humanity Institute
+https://www.fhi.ox.ac.uk/
+# [PERSONA] Cambridge CSER (Centre for the Study of Existential Risk)
+https://www.cser.ac.uk/
+# [PERSONA] London School of Economics
+https://www.lse.ac.uk/
+# [PERSONA] Nick Bostrom (Oxford)
+https://www.fhi.ox.ac.uk/people/nick-bostrom
+# [PERSONA] Toby Ord (Oxford)
+https://www.fhi.ox.ac.uk/people/toby-ord
+# [PERSONA] William MacAskill (Oxford)
+https://www.fhi.ox.ac.uk/people/william-macaskill
+
+# --- POLICY/CONTROL LAYER (NEU) ---
+# [PERSONA] Foreign Policy Magazine
+https://foreignpolicy.com/
+# [PERSONA] World Economic Forum
+https://www.weforum.org/
+# [PERSONA] Fabian Society
+https://fabians.org.uk/
+
+# --- YOUTUBE/DEUTSCHES NETZWERK (NEU) ---
+# [PERSONA] Kuchen TV (Marcel Heldt)
+https://www.youtube.com/c/KuchenTV
+# [PERSONA] Herr Kuchen (Johannes Gerrit Voskamp)
+https://www.youtube.com/c/HerrKuchen
+# [PERSONA] Shurjoka
+https://www.youtube.com/c/Shurjoka
+# [PERSONA] Tomatolix (Felix Michels)
+https://www.youtube.com/c/Tomatolix
+
+# --- RAP/HIP-HOP NETZWERK (NEU) ---
+# [PERSONA] Olexesh
+https://www.youtube.com/c/Olexesh
+# [PERSONA] Hanybal
+https://www.youtube.com/c/Hanybal
+# [PERSONA] Disarstar
+https://www.youtube.com/c/Disarstar
+
+# --- MATHEMATICAL RESOURCES (NEU) ---
+# [MATH] MathWorld (Eric Weisstein)
+https://mathworld.wolfram.com/
+# [MATH] Ashley Book of Knots
+https://www.amazon.com/Ashley-Book-Knots-Clifford/dp/0385040253
+
+# --- KRYPTOGRAPHIE-RESSOURCEN ---
+# [CRYPTO] Matthew Green's Blog — Backdoor-Analysen
+https://blog.cryptographyengineering.com/
+https://blog.cryptographyengineering.com/category/backdoors/
+
+# --- WISSENSCHAFTLICHE PUBLIKATIONEN ---
+# [SCIENCE] MDPI Cryptography — Verwandte Forschung
+https://www.mdpi.com/2410-387X/7/3/45
+# [SCIENCE] ScienceDirect — Verwandte Forschung
+https://www.sciencedirect.com/science/article/pii/S1574013725001224
+
+# ============================================================
+# LETZTE AKTUALISIERUNG: 2026-03-25
+# NÄCHSTER SCHRITT: Bei neuen URL-Funden sofort hier eintragen
+# ============================================================

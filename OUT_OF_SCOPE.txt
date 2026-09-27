@@ -1,0 +1,31 @@
+# OUT_OF_SCOPE.txt — Ausgeschlossene URLs (nach dreifacher Prüfung)
+# ============================================================
+# PFLICHT: Diese Datei VOR JEDEM ARBEITSSCHRITT einlesen.
+# Format: Eine URL pro Zeile. Kommentare beginnen mit #.
+# WARNUNG: URLs hier landen erst nach DREIFACHER VERIFIKATION.
+#   Dreifach-Prüfung = Kontext + Querverbindungen + Zeitliche Einordnung
+#
+# Eintrag-Format:
+#   URL
+#   # Grund: [Begründung] | Geprüft: [Datum] | Agent: [Agenten-ID]
+# ============================================================
+
+# --- NOCH LEER ---
+# Bisher wurden keine URLs nach dreifacher Prüfung ausgeschlossen.
+# Diese Datei wird im Laufe der Untersuchung befüllt.
+
+# ============================================================
+# HINWEIS: Platzhalterkandidaten (noch NICHT ausgeschlossen — pending):
+# Die folgenden URLs tauchen in den Quelldateien mit unvollständigen
+# Pfaden auf (".../...") und müssen erst vollständig identifiziert
+# werden, bevor sie klassifiziert werden können:
+#
+#   https://googology.fandom.com/...    (Pfad unklar)
+#   https://thedailyomnivore.net/...    (Pfad unklar)
+#   https://www.atlasobscura.com/...    (Pfad unklar)
+#   https://www.sciencedirect.com/...   (Alternativpfad unklar)
+#
+# Diese verbleiben in NETWORK_URLS.txt bis vollständige URLs bekannt.
+# ============================================================
+
+# LETZTE AKTUALISIERUNG: 2026-03-24

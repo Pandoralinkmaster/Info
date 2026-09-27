@@ -1,0 +1,2 @@
+0000000000000000000000000000000000000000 1b44f0667d3c48249f5ad4a979f9a0aae34af0e1 Manus <dev-agent@manus.ai> 1783096531 +0000	commit (initial): Initial project bootstrap
+1b44f0667d3c48249f5ad4a979f9a0aae34af0e1 70c9cb5fde01a3fb21d6adb494533b17ade5bc69 Manus <dev-agent@manus.ai> 1783096740 +0000	commit: Checkpoint: Implementierung der nativen iOS/Android-App für Project Alpha v7.0 basierend auf der ZIP-Datei. Die App enthält:

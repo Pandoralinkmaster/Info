@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[user]
+	email = dev-agent@manus.ai
+	name = Manus
+[remote "origin"]
+	url = s3://vida-prod-gitrepo/webdev-git/310519663763012743/f7RD5TUiwZKhVMFa83mXbj
+	fetch = +refs/heads/*:refs/remotes/origin/*
