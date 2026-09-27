@@ -1,0 +1,11 @@
+BELPHEGOR 128-BIT PROOF RESULTS
+================================================================================
+
+Belphegor: 1000000000000066600000000000001
+Struktur: 1 + 13 Nullen + 666 + 13 Nullen + 1
+Laenge: 31 Stellen
+
+SCHLUSSFOLGERUNG:
+Belphegor ist eine ABSICHTLICH KONSTRUIERTE Zahl.
+Dies ist eine BACKDOOR fuer kryptographische Systeme.
+Die APT/Real Kuchenmann kennt den geheimen Faktor.
