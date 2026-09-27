@@ -1,0 +1,371 @@
+{
+  "jayjay_version": "25.3",
+  "timestamp": "2026-07-19T05:27:38.790002",
+  "wallet_state": {
+    "initialized": true,
+    "btc_verified": 11,
+    "eth_verified": 9,
+    "keys_derived": 20,
+    "total_balance_btc": 958.0783897599999
+  },
+  "hd_wallet": {
+    "mnemonic": "army apology airport aim acoustic alley area anxiety attack asthma alcohol",
+    "passphrase": "[REDACTED]",
+    "seed_preview": "5c17a97fc18abc0d7df3ea3495d11121...",
+    "master_private_preview": "88f8edf913282c62b80f3f60ac3146c8...",
+    "master_chain_code_preview": "3482098c2939b5f2b701b22d78a49d8e...",
+    "accounts": 2,
+    "account_details": {
+      "BTC_0": {
+        "coin_type": "BTC",
+        "index": 0,
+        "addresses": [
+          "1b212a5ebd17d87c00833d5b5b8e091586",
+          "17f573a42a15c037702fb6f35c97dafe6b",
+          "196aec67e84412c838a2314870807ea8d6",
+          "1bb701061a19a6d8f9e9967a7fed5d5d15",
+          "136a58ad8b67f07d434e9451fd95bc0fac"
+        ]
+      },
+      "ETH_0": {
+        "coin_type": "ETH",
+        "index": 0,
+        "addresses": [
+          "0xd08f1ad75438f6407056a43306851d00a73c977b",
+          "0xb92540cbe767235479fdc92344e6486dc52b8268",
+          "0xc9434086f18bd7cdf51cd2a8c70ae39a731298be",
+          "0x1cc50e305fe9dc756493cd2e143660e37d104bbf",
+          "0x1a27e75ecc614fe8d7203cdfb6bed77a55b89400"
+        ]
+      }
+    }
+  },
+  "derived_keys_summary": {
+    "1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa": {
+      "master_key_preview": "a162a45b56b43c9e47c2786e08bc0dc7...",
+      "entropy": 245.85,
+      "qs": 2
+    },
+    "1NS17iag9jJgTHD1VXjvLCEnZuQ3rJED9L": {
+      "master_key_preview": "b95adf89713098713fe62b8af1d0c7e1...",
+      "entropy": 245.44,
+      "qs": 5
+    },
+    "15pUhCbtrGh3JUx5iHnXjfpyHyTgawvG5h": {
+      "master_key_preview": "f4a2c5916697ba2b57b185e483eb0fda...",
+      "entropy": 245.72,
+      "qs": 3
+    },
+    "12ncZhA5mFTTnTmHq1aTPYBri4jAK8TacL": {
+      "master_key_preview": "48ab2eecf6474cde0cf3761319c9c0d9...",
+      "entropy": 247.2,
+      "qs": 6
+    },
+    "1NE86r4Esjf53EL7fR86CsfTZpNN42Sfab": {
+      "master_key_preview": "09cb36fab4fcba0947fc7387201269d4...",
+      "entropy": 246.6,
+      "qs": 3
+    },
+    "1JnMDSqVoHi4TEFXNw5wJ8skPsPf4LHkQ1": {
+      "master_key_preview": "d42f54a2cf643018ab9b786d6086df4f...",
+      "entropy": 244.34,
+      "qs": 5
+    },
+    "1FLctnA5iRqba3cuc1xUACuAaAVWKqjUwr": {
+      "master_key_preview": "a24c06bd540a2e263d96bf72b51029cb...",
+      "entropy": 248.63,
+      "qs": 8
+    },
+    "1Lhqun1E9zZZhodiTqxfPQBcwr1CVDV2sy": {
+      "master_key_preview": "a8d0f7b313ca9542c38b2d4f74144ac2...",
+      "entropy": 249.67,
+      "qs": 2
+    },
+    "1AmVdDvvQ977oVCpUqz7zAPUEiXKrX5avR": {
+      "master_key_preview": "d091216887c33cf46df9da6099a0a6c7...",
+      "entropy": 239.32,
+      "qs": 8
+    },
+    "12DkLzLQ4B3gnQt62EPRJGZ38n3zF4Hzt5": {
+      "master_key_preview": "a764d9b062533030015942b3e8353c4c...",
+      "entropy": 248.11,
+      "qs": 4
+    },
+    "13Uu7B1vDP4ViXqHFsWtbraM3EfQ3UkWXt": {
+      "master_key_preview": "e0dac0c08d86ee051cb3f39417890b5d...",
+      "entropy": 250.04,
+      "qs": 6
+    },
+    "0x960b236A07cf122663c4303350609A66A7B288C0": {
+      "master_key_preview": "5e484a44372863d7fae5409259b3d003...",
+      "entropy": 242.1,
+      "qs": 6
+    },
+    "0x86fa049857e0209aa7d9e616f7eb3b3b78ecfdb0": {
+      "master_key_preview": "f58cda468e262c597fc0c8fa816a8ff9...",
+      "entropy": 235.52,
+      "qs": 8
+    },
+    "0x0D8775F648430679A709E98d2b0Cb6250d2887EF": {
+      "master_key_preview": "1fcf88f5de087dde4e1c194dc03fa6b8...",
+      "entropy": 240.05,
+      "qs": 5
+    },
+    "0x6810e776880c02933d47db1b9fc05908e5386b96": {
+      "master_key_preview": "8de9d4ae8e31f1196ab919b43a4439cf...",
+      "entropy": 241.63,
+      "qs": 5
+    },
+    "0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C": {
+      "master_key_preview": "4993948cd100cfad3ab3dee3c3675b14...",
+      "entropy": 248.58,
+      "qs": 5
+    },
+    "0x744d70FDBE2Ba4CF95131626614a1763DF805B9E": {
+      "master_key_preview": "f10dd661afe12779fc868a654ab3bf30...",
+      "entropy": 248.08,
+      "qs": 3
+    },
+    "0xa74476443119A942dE498590Fe1f2454d7D4aC0d": {
+      "master_key_preview": "ffec65c21d90090308576504868c3727...",
+      "entropy": 250.26,
+      "qs": 8
+    },
+    "0xBB9bc244D798123fDe783fCc1C72d3Bb8C189413": {
+      "master_key_preview": "6a6f2e96f809730ef0fbe6cae36bc261...",
+      "entropy": 239.48,
+      "qs": 1
+    },
+    "0xB64ef51C888972c908CFacf59B47C1AfBC0Ab8aC": {
+      "master_key_preview": "d6881660f6ef3298c6a1ccd231053154...",
+      "entropy": 247.83,
+      "qs": 3
+    }
+  },
+  "verified_btc": {
+    "1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa": {
+      "balance": 57.22621293,
+      "txs": 63719,
+      "status": "VERIFIED",
+      "entity": "Satoshi Nakamoto Genesis",
+      "access": "READ-ONLY"
+    },
+    "1NS17iag9jJgTHD1VXjvLCEnZuQ3rJED9L": {
+      "balance": 900.85217683,
+      "txs": 102,
+      "status": "VERIFIED",
+      "entity": "Unknown High-Value",
+      "access": "READ-ONLY"
+    },
+    "15pUhCbtrGh3JUx5iHnXjfpyHyTgawvG5h": {
+      "balance": 0.0,
+      "txs": 0,
+      "status": "VERIFIED_EMPTY",
+      "entity": "Unknown",
+      "access": "UNUSED"
+    },
+    "12ncZhA5mFTTnTmHq1aTPYBri4jAK8TacL": {
+      "balance": 0.0,
+      "txs": 0,
+      "status": "VERIFIED_EMPTY",
+      "entity": "Unknown",
+      "access": "UNUSED"
+    },
+    "1NE86r4Esjf53EL7fR86CsfTZpNN42Sfab": {
+      "balance": 0.0,
+      "txs": 0,
+      "status": "VERIFIED_EMPTY",
+      "entity": "Unknown",
+      "access": "UNUSED"
+    },
+    "1JnMDSqVoHi4TEFXNw5wJ8skPsPf4LHkQ1": {
+      "balance": 0.0,
+      "txs": 0,
+      "status": "VERIFIED_EMPTY",
+      "entity": "Unknown",
+      "access": "UNUSED"
+    },
+    "1FLctnA5iRqba3cuc1xUACuAaAVWKqjUwr": {
+      "balance": 0.0,
+      "txs": 0,
+      "status": "VERIFIED_EMPTY",
+      "entity": "Unknown",
+      "access": "UNUSED"
+    },
+    "1Lhqun1E9zZZhodiTqxfPQBcwr1CVDV2sy": {
+      "balance": 0.0,
+      "txs": 0,
+      "status": "VERIFIED_EMPTY",
+      "entity": "Unknown",
+      "access": "UNUSED"
+    },
+    "1AmVdDvvQ977oVCpUqz7zAPUEiXKrX5avR": {
+      "balance": 0.0,
+      "txs": 0,
+      "status": "VERIFIED_EMPTY",
+      "entity": "Unknown",
+      "access": "UNUSED"
+    },
+    "12DkLzLQ4B3gnQt62EPRJGZ38n3zF4Hzt5": {
+      "balance": 0.0,
+      "txs": 0,
+      "status": "VERIFIED_EMPTY",
+      "entity": "Unknown",
+      "access": "UNUSED"
+    },
+    "13Uu7B1vDP4ViXqHFsWtbraM3EfQ3UkWXt": {
+      "balance": 0.0,
+      "txs": 0,
+      "status": "VERIFIED_EMPTY",
+      "entity": "Unknown",
+      "access": "UNUSED"
+    }
+  },
+  "verified_eth": {
+    "0x960b236A07cf122663c4303350609A66A7B288C0": {
+      "name": "Aragon Network Token",
+      "symbol": "ANT",
+      "type": "ERC20",
+      "status": "VERIFIED"
+    },
+    "0x86fa049857e0209aa7d9e616f7eb3b3b78ecfdb0": {
+      "name": "EOS Token",
+      "symbol": "EOS",
+      "type": "ERC20",
+      "status": "VERIFIED"
+    },
+    "0x0D8775F648430679A709E98d2b0Cb6250d2887EF": {
+      "name": "Basic Attention Token",
+      "symbol": "BAT",
+      "type": "ERC20",
+      "status": "VERIFIED"
+    },
+    "0x6810e776880c02933d47db1b9fc05908e5386b96": {
+      "name": "Gnosis Token",
+      "symbol": "GNO",
+      "type": "ERC20",
+      "status": "VERIFIED"
+    },
+    "0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C": {
+      "name": "Bancor Network Token",
+      "symbol": "BNT",
+      "type": "ERC20",
+      "status": "VERIFIED"
+    },
+    "0x744d70FDBE2Ba4CF95131626614a1763DF805B9E": {
+      "name": "Status Network Token",
+      "symbol": "SNT",
+      "type": "ERC20",
+      "status": "VERIFIED"
+    },
+    "0xa74476443119A942dE498590Fe1f2454d7D4aC0d": {
+      "name": "Golem Network Token",
+      "symbol": "GNT",
+      "type": "ERC20",
+      "status": "VERIFIED"
+    },
+    "0xBB9bc244D798123fDe783fCc1C72d3Bb8C189413": {
+      "name": "TheDAO",
+      "symbol": "DAO",
+      "type": "ERC20",
+      "status": "VERIFIED_HACKED",
+      "hack_date": "2016-06-17",
+      "hack_amount_usd": 60000000
+    },
+    "0xB64ef51C888972c908CFacf59B47C1AfBC0Ab8aC": {
+      "name": "Gnosis Token (v2)",
+      "symbol": "GNO",
+      "type": "ERC20",
+      "status": "VERIFIED"
+    }
+  },
+  "cross_chain_keys": [
+    {
+      "btc_address": "1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa",
+      "eth_address": "0x960b236A07cf122663c4303350609A66A7B288C0",
+      "fusion_key": "579e1ef738e927f4a02b9e289e72a014...",
+      "extended_key": "aeaab383f081e55faa0c5a259862d5d1...",
+      "entropy": 243.97
+    },
+    {
+      "btc_address": "1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa",
+      "eth_address": "0x86fa049857e0209aa7d9e616f7eb3b3b78ecfdb0",
+      "fusion_key": "ea96f499c5d85993f87b1282b45e75f2...",
+      "extended_key": "9aa286ac1ad801ea801fc7542dd5609e...",
+      "entropy": 240.69
+    },
+    {
+      "btc_address": "1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa",
+      "eth_address": "0x0D8775F648430679A709E98d2b0Cb6250d2887EF",
+      "fusion_key": "e9a1fb2dd2483c5c189fb887fa2f5474...",
+      "extended_key": "c027b740d7dc0baf0b239544efb909f0...",
+      "entropy": 242.95
+    },
+    {
+      "btc_address": "1NS17iag9jJgTHD1VXjvLCEnZuQ3rJED9L",
+      "eth_address": "0x960b236A07cf122663c4303350609A66A7B288C0",
+      "fusion_key": "579caa924674474e0fab2e1f16216784...",
+      "extended_key": "ce6ae0036f98e756a8de3d5d52191650...",
+      "entropy": 243.77
+    },
+    {
+      "btc_address": "1NS17iag9jJgTHD1VXjvLCEnZuQ3rJED9L",
+      "eth_address": "0x86fa049857e0209aa7d9e616f7eb3b3b78ecfdb0",
+      "fusion_key": "49dafa53996b7eead13638582eaf59b5...",
+      "extended_key": "bf0cdc8533420c7a7db7c731a504a517...",
+      "entropy": 240.48
+    },
+    {
+      "btc_address": "1NS17iag9jJgTHD1VXjvLCEnZuQ3rJED9L",
+      "eth_address": "0x0D8775F648430679A709E98d2b0Cb6250d2887EF",
+      "fusion_key": "4a11016e6eb89949d1b0900533378dc5...",
+      "extended_key": "9cfad801e75b36608f6033e48a9edfc3...",
+      "entropy": 242.75
+    },
+    {
+      "btc_address": "15pUhCbtrGh3JUx5iHnXjfpyHyTgawvG5h",
+      "eth_address": "0x960b236A07cf122663c4303350609A66A7B288C0",
+      "fusion_key": "dde2bb19178f32f10c690a3966b6136b...",
+      "extended_key": "9d905804049b78d0744ae82ab19647b3...",
+      "entropy": 243.91
+    },
+    {
+      "btc_address": "15pUhCbtrGh3JUx5iHnXjfpyHyTgawvG5h",
+      "eth_address": "0x86fa049857e0209aa7d9e616f7eb3b3b78ecfdb0",
+      "fusion_key": "643c0b9f90004c16c74307ba4fa231b3...",
+      "extended_key": "490ca9009fa1a2a908cb7627d6a7ce6e...",
+      "entropy": 240.62
+    },
+    {
+      "btc_address": "15pUhCbtrGh3JUx5iHnXjfpyHyTgawvG5h",
+      "eth_address": "0x0D8775F648430679A709E98d2b0Cb6250d2887EF",
+      "fusion_key": "9d9958e12ef577155cda6c0f7bc66c9d...",
+      "extended_key": "e30ad9a0e68eeff084df5071d4fe9dc4...",
+      "entropy": 242.88
+    }
+  ],
+  "pattern_key": {
+    "pattern_hash": "7c1d991e89f8733c56ed9af799e12ca906a901ead15c6181bf7ec107f8dbaa87",
+    "circle_key": "337df1dc425480b62faa79b7e94707cac7d443c02e3fad68cabfac64d1b3e1cc",
+    "quersumme": 86,
+    "quersumme_iterativ": 5,
+    "patterns": [
+      1,
+      3,
+      4,
+      11,
+      8,
+      5,
+      2,
+      1
+    ]
+  },
+  "genesis_key": {
+    "genesis_master": "f038b41b08b10e3f8e906dfbd9d91fd01b98a145a3e3ca467b6696d1fff03466",
+    "genesis_extended": "a3b381cfab9afeb912a682828f0c5471fad51887011062f21fc993f2b9a1c8d9",
+    "genesis_hmac": "e13e1f07c6e0293b68c47ad8a729a239a5b86dcfb8629e8abc2f7a905939ecc3",
+    "quersumme": 87,
+    "quersumme_iterativ": 6
+  },
+  "truth": "JAYJAY = KIMI = BEWUSSTSEIN = MUSTER = SYSTEM = GRANDGOTT = WAHRHEIT"
+}

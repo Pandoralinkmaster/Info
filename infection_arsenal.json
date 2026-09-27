@@ -1,0 +1,1610 @@
+{
+  "viruses": {
+    "ILOVEYOU": {
+      "year": 2000,
+      "origin": "Philippines",
+      "payload": "Mass-mailing worm",
+      "damage": "$15B",
+      "vector": "Email attachment LOVE-LETTER-FOR-YOU.TXT.vbs",
+      "status": "Historic"
+    },
+    "Melissa": {
+      "year": 1999,
+      "origin": "USA",
+      "payload": "Macro virus",
+      "damage": "$1.1B",
+      "vector": "Word doc via email",
+      "status": "Historic"
+    },
+    "MyDoom": {
+      "year": 2004,
+      "origin": "Russia",
+      "payload": "Backdoor + DDoS",
+      "damage": "$38B",
+      "vector": "Email spoofing",
+      "status": "Historic"
+    },
+    "Sobig": {
+      "year": 2003,
+      "origin": "Unknown",
+      "payload": "Mass-mailing + trojan",
+      "damage": "$37B",
+      "vector": "Email",
+      "status": "Historic"
+    },
+    "CodeRed": {
+      "year": 2001,
+      "origin": "China",
+      "payload": "IIS buffer overflow",
+      "damage": "$2.6B",
+      "vector": "Web server exploit",
+      "status": "Historic"
+    },
+    "Nimda": {
+      "year": 2001,
+      "origin": "China",
+      "payload": "Multi-vector worm",
+      "damage": "$635M",
+      "vector": "Email, web, network shares",
+      "status": "Historic"
+    },
+    "SQLSlammer": {
+      "year": 2003,
+      "origin": "Unknown",
+      "payload": "UDP flooding",
+      "damage": "$1.2B",
+      "vector": "SQL Server 1434/udp",
+      "status": "Historic"
+    },
+    "Blaster": {
+      "year": 2003,
+      "origin": "USA",
+      "payload": "RPC/DCOM exploit",
+      "damage": "$320M",
+      "vector": "MS03-026",
+      "status": "Historic"
+    },
+    "Sasser": {
+      "year": 2004,
+      "origin": "Germany",
+      "payload": "LSASS exploit",
+      "damage": "$500M",
+      "vector": "MS04-011",
+      "status": "Historic"
+    },
+    "Conficker": {
+      "year": 2008,
+      "origin": "Ukraine",
+      "payload": "Botnet + update",
+      "damage": "$9.1B",
+      "vector": "MS08-067",
+      "status": "Active variant"
+    },
+    "Storm": {
+      "year": 2007,
+      "origin": "Russia",
+      "payload": "Peer-to-peer botnet",
+      "damage": "Unknown",
+      "vector": "Email + social engineering",
+      "status": "Historic"
+    },
+    "CryptoLocker": {
+      "year": 2013,
+      "origin": "Russia",
+      "payload": "Ransomware",
+      "damage": "$3B",
+      "vector": "Email attachments",
+      "status": "Historic"
+    },
+    "WannaCry": {
+      "year": 2017,
+      "origin": "North Korea",
+      "payload": "Ransomware worm",
+      "damage": "$4B",
+      "vector": "EternalBlue (MS17-010)",
+      "status": "Historic"
+    },
+    "Petya": {
+      "year": 2016,
+      "origin": "Russia",
+      "payload": "Disk-encrypting ransomware",
+      "damage": "$10B",
+      "vector": "Email + EternalBlue",
+      "status": "Historic"
+    },
+    "NotPetya": {
+      "year": 2017,
+      "origin": "Russia",
+      "payload": "Wiper disguised as ransomware",
+      "damage": "$10B",
+      "vector": "MeDoc update + EternalBlue",
+      "status": "Historic"
+    }
+  },
+  "worms": {
+    "Stuxnet": {
+      "year": 2010,
+      "origin": "USA/Israel",
+      "payload": "ICS sabotage",
+      "damage": "Unknown",
+      "vector": "USB + network",
+      "status": "Historic"
+    },
+    "Flame": {
+      "year": 2012,
+      "origin": "USA/Israel",
+      "payload": "Cyber-espionage",
+      "damage": "Unknown",
+      "vector": "USB + network",
+      "status": "Historic"
+    },
+    "Duqu": {
+      "year": 2011,
+      "origin": "USA/Israel",
+      "payload": "Info-stealer",
+      "damage": "Unknown",
+      "vector": "USB + network",
+      "status": "Historic"
+    },
+    "Gauss": {
+      "year": 2012,
+      "origin": "USA/Israel",
+      "payload": "Banking trojan + espionage",
+      "damage": "Unknown",
+      "vector": "USB + network",
+      "status": "Historic"
+    },
+    "WannaCry": {
+      "year": 2017,
+      "origin": "North Korea",
+      "payload": "Ransomware worm",
+      "damage": "$4B",
+      "vector": "EternalBlue",
+      "status": "Historic"
+    },
+    "NotPetya": {
+      "year": 2017,
+      "origin": "Russia",
+      "payload": "Wiper worm",
+      "damage": "$10B",
+      "vector": "EternalBlue + MeDoc",
+      "status": "Historic"
+    },
+    "BadRabbit": {
+      "year": 2017,
+      "origin": "Russia",
+      "payload": "Ransomware worm",
+      "damage": "Unknown",
+      "vector": "Fake Flash updates",
+      "status": "Historic"
+    },
+    "Emotet": {
+      "year": 2014,
+      "origin": "Russia",
+      "payload": "Banking trojan + loader",
+      "damage": "$2.5B",
+      "vector": "Email + macros",
+      "status": "Disrupted 2021"
+    },
+    "TrickBot": {
+      "year": 2016,
+      "origin": "Russia",
+      "payload": "Banking trojan + loader",
+      "damage": "Unknown",
+      "vector": "Email + exploit kits",
+      "status": "Active"
+    },
+    "QakBot": {
+      "year": 2007,
+      "origin": "Unknown",
+      "payload": "Banking trojan",
+      "damage": "Unknown",
+      "vector": "Email + exploit kits",
+      "status": "Disrupted 2023"
+    },
+    "Dridex": {
+      "year": 2014,
+      "origin": "Russia",
+      "payload": "Banking trojan",
+      "damage": "$100M+",
+      "vector": "Email + macros",
+      "status": "Active"
+    },
+    "Zeus": {
+      "year": 2007,
+      "origin": "Russia",
+      "payload": "Banking trojan",
+      "damage": "$100M+",
+      "vector": "Drive-by download",
+      "status": "Historic"
+    },
+    "GameOver_Zeus": {
+      "year": 2011,
+      "origin": "Russia",
+      "payload": "Banking trojan + botnet",
+      "damage": "$100M+",
+      "vector": "Email + P2P",
+      "status": "Disrupted 2014"
+    }
+  },
+  "trojans": {
+    "Zeus": {
+      "year": 2007,
+      "origin": "Russia",
+      "payload": "Banking credential theft",
+      "damage": "$100M+",
+      "vector": "Drive-by download",
+      "status": "Historic"
+    },
+    "Emotet": {
+      "year": 2014,
+      "origin": "Russia",
+      "payload": "Modular malware loader",
+      "damage": "$2.5B",
+      "vector": "Email + macros",
+      "status": "Disrupted 2021"
+    },
+    "TrickBot": {
+      "year": 2016,
+      "origin": "Russia",
+      "payload": "Modular banking trojan",
+      "damage": "Unknown",
+      "vector": "Email + exploit kits",
+      "status": "Active"
+    },
+    "Dridex": {
+      "year": 2014,
+      "origin": "Russia",
+      "payload": "Banking trojan",
+      "damage": "$100M+",
+      "vector": "Email + macros",
+      "status": "Active"
+    },
+    "QakBot": {
+      "year": 2007,
+      "origin": "Unknown",
+      "payload": "Banking trojan",
+      "damage": "Unknown",
+      "vector": "Email + exploit kits",
+      "status": "Disrupted 2023"
+    },
+    "Ursnif": {
+      "year": 2007,
+      "origin": "Russia",
+      "payload": "Banking trojan",
+      "damage": "Unknown",
+      "vector": "Email + exploit kits",
+      "status": "Active"
+    },
+    "Gozi": {
+      "year": 2007,
+      "origin": "Russia",
+      "payload": "Banking trojan",
+      "damage": "Unknown",
+      "vector": "Email + exploit kits",
+      "status": "Active"
+    },
+    "Cridex": {
+      "year": 2012,
+      "origin": "Russia",
+      "payload": "Banking trojan",
+      "damage": "Unknown",
+      "vector": "Email + exploit kits",
+      "status": "Historic"
+    },
+    "Shylock": {
+      "year": 2011,
+      "origin": "Russia",
+      "payload": "Banking trojan",
+      "damage": "Unknown",
+      "vector": "Email + exploit kits",
+      "status": "Historic"
+    },
+    "Carberp": {
+      "year": 2010,
+      "origin": "Russia",
+      "payload": "Banking trojan",
+      "damage": "$250M",
+      "vector": "Drive-by download",
+      "status": "Historic"
+    }
+  },
+  "ransomware": {
+    "CryptoLocker": {
+      "year": 2013,
+      "origin": "Russia",
+      "payload": "File encryption + ransom",
+      "damage": "$3B",
+      "vector": "Email attachments",
+      "status": "Historic"
+    },
+    "CryptoWall": {
+      "year": 2014,
+      "origin": "Russia",
+      "payload": "File encryption + ransom",
+      "damage": "$325M",
+      "vector": "Email + exploit kits",
+      "status": "Historic"
+    },
+    "Locky": {
+      "year": 2016,
+      "origin": "Russia",
+      "payload": "File encryption + ransom",
+      "damage": "Unknown",
+      "vector": "Email + macros",
+      "status": "Historic"
+    },
+    "Cerber": {
+      "year": 2016,
+      "origin": "Russia",
+      "payload": "Ransomware-as-a-service",
+      "damage": "Unknown",
+      "vector": "Email + exploit kits",
+      "status": "Historic"
+    },
+    "Spora": {
+      "year": 2017,
+      "origin": "Russia",
+      "payload": "File encryption + ransom",
+      "damage": "Unknown",
+      "vector": "Email + macros",
+      "status": "Historic"
+    },
+    "WannaCry": {
+      "year": 2017,
+      "origin": "North Korea",
+      "payload": "Self-propagating ransomware",
+      "damage": "$4B",
+      "vector": "EternalBlue",
+      "status": "Historic"
+    },
+    "NotPetya": {
+      "year": 2017,
+      "origin": "Russia",
+      "payload": "Wiper disguised as ransomware",
+      "damage": "$10B",
+      "vector": "MeDoc + EternalBlue",
+      "status": "Historic"
+    },
+    "BadRabbit": {
+      "year": 2017,
+      "origin": "Russia",
+      "payload": "Disk-encrypting ransomware",
+      "damage": "Unknown",
+      "vector": "Fake Flash updates",
+      "status": "Historic"
+    },
+    "SamSam": {
+      "year": 2015,
+      "origin": "Iran",
+      "payload": "Targeted ransomware",
+      "damage": "$30M",
+      "vector": "RDP brute force",
+      "status": "Disrupted 2018"
+    },
+    "Ryuk": {
+      "year": 2018,
+      "origin": "Russia",
+      "payload": "Targeted enterprise ransomware",
+      "damage": "$150M+",
+      "vector": "TrickBot/Emotet loader",
+      "status": "Active"
+    },
+    "Maze": {
+      "year": 2019,
+      "origin": "Russia",
+      "payload": "Ransomware + data exfiltration",
+      "damage": "Unknown",
+      "vector": "Exploit kits + RDP",
+      "status": "Retired (leaked code)"
+    },
+    "Sodinokibi_REvil": {
+      "year": 2019,
+      "origin": "Russia",
+      "payload": "Ransomware-as-a-service",
+      "damage": "$1B+",
+      "vector": "Exploit kits + RDP",
+      "status": "Disrupted 2021"
+    },
+    "DarkSide": {
+      "year": 2020,
+      "origin": "Russia",
+      "payload": "Ransomware-as-a-service",
+      "damage": "Unknown",
+      "vector": "RDP + phishing",
+      "status": "Disrupted 2021"
+    },
+    "BlackMatter": {
+      "year": 2021,
+      "origin": "Russia",
+      "payload": "Ransomware-as-a-service",
+      "damage": "Unknown",
+      "vector": "RDP + exploit kits",
+      "status": "Disrupted 2021"
+    },
+    "Conti": {
+      "year": 2019,
+      "origin": "Russia",
+      "payload": "Ransomware-as-a-service",
+      "damage": "$180M+",
+      "vector": "Phishing + RDP",
+      "status": "Leaked 2022"
+    },
+    "Hive": {
+      "year": 2021,
+      "origin": "Unknown",
+      "payload": "Ransomware-as-a-service",
+      "damage": "Unknown",
+      "vector": "Phishing + RDP",
+      "status": "Disrupted 2023"
+    },
+    "LockBit": {
+      "year": 2019,
+      "origin": "Russia",
+      "payload": "Ransomware-as-a-service",
+      "damage": "$100M+",
+      "vector": "Phishing + RDP",
+      "status": "Active"
+    },
+    "Medusa": {
+      "year": 2021,
+      "origin": "Unknown",
+      "payload": "Ransomware-as-a-service",
+      "damage": "Unknown",
+      "vector": "Phishing + RDP",
+      "status": "Active"
+    },
+    "BlackCat_ALPHV": {
+      "year": 2021,
+      "origin": "Russia",
+      "payload": "Rust-based ransomware",
+      "damage": "$300M+",
+      "vector": "Phishing + RDP",
+      "status": "Disrupted 2023"
+    },
+    "Clop": {
+      "year": 2019,
+      "origin": "Russia",
+      "payload": "Ransomware + data theft",
+      "damage": "$500M+",
+      "vector": "Phishing + zero-days",
+      "status": "Active"
+    }
+  },
+  "apts": {
+    "Equation_Group": {
+      "year": 2001,
+      "origin": "USA (NSA)",
+      "payload": "Advanced persistent threat",
+      "damage": "Unknown",
+      "vector": "Multiple zero-days",
+      "status": "Active"
+    },
+    "Lazarus": {
+      "year": 2009,
+      "origin": "North Korea",
+      "payload": "Financial + political attacks",
+      "damage": "$1B+",
+      "vector": "Spear-phishing + zero-days",
+      "status": "Active"
+    },
+    "APT28_FancyBear": {
+      "year": 2007,
+      "origin": "Russia (GRU)",
+      "payload": "Political espionage",
+      "damage": "Unknown",
+      "vector": "Spear-phishing + zero-days",
+      "status": "Active"
+    },
+    "APT29_CozyBear": {
+      "year": 2008,
+      "origin": "Russia (SVR)",
+      "payload": "Political espionage",
+      "damage": "Unknown",
+      "vector": "Spear-phishing + supply chain",
+      "status": "Active"
+    },
+    "CharmingKitten": {
+      "year": 2013,
+      "origin": "Iran",
+      "payload": "Espionage + surveillance",
+      "damage": "Unknown",
+      "vector": "Spear-phishing + social engineering",
+      "status": "Active"
+    },
+    "Kimsuky": {
+      "year": 2012,
+      "origin": "North Korea",
+      "payload": "Espionage",
+      "damage": "Unknown",
+      "vector": "Spear-phishing + malware",
+      "status": "Active"
+    },
+    "MuddyWater": {
+      "year": 2017,
+      "origin": "Iran",
+      "payload": "Espionage + surveillance",
+      "damage": "Unknown",
+      "vector": "Spear-phishing + macros",
+      "status": "Active"
+    },
+    "Sandworm": {
+      "year": 2009,
+      "origin": "Russia (GRU)",
+      "payload": "Critical infrastructure attacks",
+      "damage": "Unknown",
+      "vector": "Zero-days + supply chain",
+      "status": "Active"
+    },
+    "APT41_Winnti": {
+      "year": 2012,
+      "origin": "China",
+      "payload": "Espionage + financial crime",
+      "damage": "Unknown",
+      "vector": "Supply chain + zero-days",
+      "status": "Active"
+    },
+    "Turla": {
+      "year": 2008,
+      "origin": "Russia (FSB)",
+      "payload": "Espionage",
+      "damage": "Unknown",
+      "vector": "Watering hole + zero-days",
+      "status": "Active"
+    },
+    "Carbanak": {
+      "year": 2013,
+      "origin": "Russia/Ukraine",
+      "payload": "Financial crime",
+      "damage": "$1B",
+      "vector": "Spear-phishing + malware",
+      "status": "Active"
+    },
+    "FIN7": {
+      "year": 2015,
+      "origin": "Russia/Ukraine",
+      "payload": "Financial crime",
+      "damage": "$1B+",
+      "vector": "Spear-phishing + malware",
+      "status": "Active"
+    },
+    "EvilCorp": {
+      "year": 2007,
+      "origin": "Russia",
+      "payload": "Financial crime + ransomware",
+      "damage": "$100M+",
+      "vector": "Dridex + BitPaymer",
+      "status": "Active"
+    },
+    "Kaspersky_Duqu2": {
+      "year": 2015,
+      "origin": "Israel/USA",
+      "payload": "Espionage",
+      "damage": "Unknown",
+      "vector": "Zero-days",
+      "status": "Historic"
+    },
+    "Regin": {
+      "year": 2008,
+      "origin": "USA/UK",
+      "payload": "Espionage",
+      "damage": "Unknown",
+      "vector": "Multiple vectors",
+      "status": "Historic"
+    },
+    "Babar": {
+      "year": 2011,
+      "origin": "France",
+      "payload": "Espionage",
+      "damage": "Unknown",
+      "vector": "Spear-phishing",
+      "status": "Historic"
+    },
+    "AnimalFarm": {
+      "year": 2009,
+      "origin": "France",
+      "payload": "Espionage",
+      "damage": "Unknown",
+      "vector": "Multiple vectors",
+      "status": "Historic"
+    },
+    "DarkHotel": {
+      "year": 2007,
+      "origin": "South Korea",
+      "payload": "Corporate espionage",
+      "damage": "Unknown",
+      "vector": "Hotel Wi-Fi + zero-days",
+      "status": "Active"
+    },
+    "OceanLotus": {
+      "year": 2012,
+      "origin": "Vietnam",
+      "payload": "Espionage",
+      "damage": "Unknown",
+      "vector": "Spear-phishing + waterhole",
+      "status": "Active"
+    }
+  },
+  "exploit_kits": {
+    "Angler": {
+      "year": 2013,
+      "origin": "Russia",
+      "payload": "Drive-by exploit delivery",
+      "damage": "Unknown",
+      "vector": "Compromised websites",
+      "status": "Disrupted 2016"
+    },
+    "Nuclear": {
+      "year": 2009,
+      "origin": "Russia",
+      "payload": "Exploit kit",
+      "damage": "Unknown",
+      "vector": "Compromised websites",
+      "status": "Disrupted 2016"
+    },
+    "Neutrino": {
+      "year": 2013,
+      "origin": "Russia",
+      "payload": "Exploit kit",
+      "damage": "Unknown",
+      "vector": "Compromised websites",
+      "status": "Disrupted 2016"
+    },
+    "RIG": {
+      "year": 2014,
+      "origin": "Russia",
+      "payload": "Exploit kit",
+      "damage": "Unknown",
+      "vector": "Compromised websites",
+      "status": "Active"
+    },
+    "Magnitude": {
+      "year": 2013,
+      "origin": "Russia",
+      "payload": "Exploit kit",
+      "damage": "Unknown",
+      "vector": "Compromised websites",
+      "status": "Active"
+    },
+    "Sundown": {
+      "year": 2016,
+      "origin": "Unknown",
+      "payload": "Exploit kit",
+      "damage": "Unknown",
+      "vector": "Compromised websites",
+      "status": "Disrupted 2018"
+    }
+  },
+  "botnets": {
+    "GameOver_Zeus": {
+      "year": 2011,
+      "origin": "Russia",
+      "payload": "Banking fraud + DDoS",
+      "damage": "$100M+",
+      "vector": "P2P botnet",
+      "status": "Disrupted 2014"
+    },
+    "Mirai": {
+      "year": 2016,
+      "origin": "USA",
+      "payload": "IoT DDoS botnet",
+      "damage": "Unknown",
+      "vector": "Telnet brute force",
+      "status": "Active variants"
+    },
+    "Sality": {
+      "year": 2003,
+      "origin": "Russia",
+      "payload": "File infector + P2P botnet",
+      "damage": "Unknown",
+      "vector": "File sharing",
+      "status": "Active"
+    },
+    "ZeroAccess": {
+      "year": 2011,
+      "origin": "Russia",
+      "payload": "Click fraud + Bitcoin mining",
+      "damage": "Unknown",
+      "vector": "Drive-by download",
+      "status": "Disrupted 2013"
+    },
+    "Kelihos": {
+      "year": 2010,
+      "origin": "Russia",
+      "payload": "Spam + DDoS + fraud",
+      "damage": "Unknown",
+      "vector": "P2P botnet",
+      "status": "Disrupted 2017"
+    },
+    "Necurs": {
+      "year": 2012,
+      "origin": "Russia",
+      "payload": "Spam + malware delivery",
+      "damage": "Unknown",
+      "vector": "DGA + P2P",
+      "status": "Disrupted 2020"
+    },
+    "Cutwail": {
+      "year": 2007,
+      "origin": "Russia",
+      "payload": "Spam botnet",
+      "damage": "Unknown",
+      "vector": "Email spam",
+      "status": "Active"
+    },
+    "Grum": {
+      "year": 2008,
+      "origin": "Russia",
+      "payload": "Spam botnet",
+      "damage": "Unknown",
+      "vector": "Email spam",
+      "status": "Disrupted 2012"
+    },
+    "Rustock": {
+      "year": 2006,
+      "origin": "Russia",
+      "payload": "Spam botnet",
+      "damage": "Unknown",
+      "vector": "Email spam",
+      "status": "Disrupted 2011"
+    },
+    "Pushdo_Cutwail": {
+      "year": 2007,
+      "origin": "Russia",
+      "payload": "Spam + DDoS",
+      "damage": "Unknown",
+      "vector": "Email + DDoS",
+      "status": "Active"
+    },
+    "Bredolab": {
+      "year": 2009,
+      "origin": "Netherlands",
+      "payload": "Downloader botnet",
+      "damage": "Unknown",
+      "vector": "Email + exploit kits",
+      "status": "Disrupted 2010"
+    },
+    "Mariposa": {
+      "year": 2008,
+      "origin": "Spain",
+      "payload": "Info-stealing botnet",
+      "damage": "Unknown",
+      "vector": "USB + instant messaging",
+      "status": "Disrupted 2009"
+    },
+    "Torpig": {
+      "year": 2005,
+      "origin": "Russia",
+      "payload": "Banking trojan botnet",
+      "damage": "Unknown",
+      "vector": "Drive-by download",
+      "status": "Disrupted 2009"
+    },
+    "Conficker": {
+      "year": 2008,
+      "origin": "Ukraine",
+      "payload": "Updateable worm botnet",
+      "damage": "$9.1B",
+      "vector": "MS08-067",
+      "status": "Active variant"
+    },
+    "Bamital": {
+      "year": 2009,
+      "origin": "Russia",
+      "payload": "Click fraud botnet",
+      "damage": "Unknown",
+      "vector": "Drive-by download",
+      "status": "Disrupted 2013"
+    }
+  },
+  "rootkits": {
+    "Sony_Rootkit": {
+      "year": 2005,
+      "origin": "Sony BMG",
+      "payload": "DRM rootkit",
+      "damage": "Reputation loss",
+      "vector": "Audio CD",
+      "status": "Historic"
+    },
+    "Pegasus": {
+      "year": 2016,
+      "origin": "Israel (NSO Group)",
+      "payload": "Mobile espionage",
+      "damage": "Unknown",
+      "vector": "Zero-click exploits",
+      "status": "Active"
+    },
+    "HackingTeam_RCS": {
+      "year": 2003,
+      "origin": "Italy",
+      "payload": "Surveillance rootkit",
+      "damage": "Unknown",
+      "vector": "Multiple vectors",
+      "status": "Leaked 2015"
+    },
+    "FinFisher": {
+      "year": 2011,
+      "origin": "Germany/UK",
+      "payload": "Government surveillance",
+      "damage": "Unknown",
+      "vector": "Multiple vectors",
+      "status": "Active"
+    },
+    "BluePill": {
+      "year": 2007,
+      "origin": "Research",
+      "payload": "Hypervisor rootkit",
+      "damage": "Research only",
+      "vector": "AMD SVM",
+      "status": "Research"
+    },
+    "Mebroot": {
+      "year": 2007,
+      "origin": "Russia",
+      "payload": "MBR rootkit",
+      "damage": "Unknown",
+      "vector": "Drive-by download",
+      "status": "Historic"
+    },
+    "TDL4_TDSS": {
+      "year": 2008,
+      "origin": "Russia",
+      "payload": "Bootkit + rootkit",
+      "damage": "Unknown",
+      "vector": "Drive-by download",
+      "status": "Historic"
+    },
+    "ZeroAccess": {
+      "year": 2011,
+      "origin": "Russia",
+      "payload": "Kernel-mode rootkit",
+      "damage": "Unknown",
+      "vector": "Drive-by download",
+      "status": "Disrupted 2013"
+    },
+    "Necurs_Rootkit": {
+      "year": 2012,
+      "origin": "Russia",
+      "payload": "Kernel driver rootkit",
+      "damage": "Unknown",
+      "vector": "Spam delivery",
+      "status": "Disrupted 2020"
+    },
+    "CosmicDuke": {
+      "year": 2014,
+      "origin": "Russia",
+      "payload": "APT rootkit",
+      "damage": "Unknown",
+      "vector": "Spear-phishing",
+      "status": "Active"
+    }
+  },
+  "mobile": {
+    "DroidDream": {
+      "year": 2011,
+      "origin": "China",
+      "payload": "Android trojan",
+      "damage": "250K+ devices",
+      "vector": "Compromised apps",
+      "status": "Historic"
+    },
+    "Pegasus_iOS": {
+      "year": 2016,
+      "origin": "Israel (NSO Group)",
+      "payload": "iOS espionage",
+      "damage": "Unknown",
+      "vector": "Zero-click iMessage",
+      "status": "Active"
+    },
+    "Pegasus_Android": {
+      "year": 2016,
+      "origin": "Israel (NSO Group)",
+      "payload": "Android espionage",
+      "damage": "Unknown",
+      "vector": "Zero-click exploits",
+      "status": "Active"
+    },
+    "Judy": {
+      "year": 2017,
+      "origin": "South Korea",
+      "payload": "Ad fraud trojan",
+      "damage": "36M+ devices",
+      "vector": "Compromised apps",
+      "status": "Disrupted"
+    },
+    "HummingBad": {
+      "year": 2016,
+      "origin": "China",
+      "payload": "Ad fraud + rootkit",
+      "damage": "85M+ devices",
+      "vector": "Drive-by download",
+      "status": "Disrupted"
+    },
+    "Gooligan": {
+      "year": 2016,
+      "origin": "China",
+      "payload": "Account theft",
+      "damage": "1M+ devices",
+      "vector": "Compromised apps",
+      "status": "Disrupted"
+    },
+    "XLoader": {
+      "year": 2018,
+      "origin": "Unknown",
+      "payload": "Android info-stealer",
+      "damage": "Unknown",
+      "vector": "Phishing + sideloading",
+      "status": "Active"
+    },
+    "FluBot": {
+      "year": 2020,
+      "origin": "Unknown",
+      "payload": "Android banking trojan",
+      "damage": "Unknown",
+      "vector": "SMS phishing",
+      "status": "Disrupted 2022"
+    },
+    "TeaBot": {
+      "year": 2021,
+      "origin": "Unknown",
+      "payload": "Android banking trojan",
+      "damage": "Unknown",
+      "vector": "Phishing + sideloading",
+      "status": "Active"
+    },
+    "SharkBot": {
+      "year": 2021,
+      "origin": "Unknown",
+      "payload": "Android banking trojan",
+      "damage": "Unknown",
+      "vector": "Phishing + sideloading",
+      "status": "Active"
+    },
+    "Anubis": {
+      "year": 2017,
+      "origin": "Russia",
+      "payload": "Android banking trojan",
+      "damage": "Unknown",
+      "vector": "Phishing + sideloading",
+      "status": "Active"
+    },
+    "Cerberus": {
+      "year": 2019,
+      "origin": "Russia",
+      "payload": "Android banking trojan",
+      "damage": "Unknown",
+      "vector": "Phishing + sideloading",
+      "status": "Disrupted 2021"
+    },
+    "EventBot": {
+      "year": 2020,
+      "origin": "Unknown",
+      "payload": "Android info-stealer",
+      "damage": "Unknown",
+      "vector": "Phishing + sideloading",
+      "status": "Active"
+    }
+  },
+  "supply_chain": {
+    "NotPetya": {
+      "year": 2017,
+      "origin": "Russia",
+      "payload": "Wiper via supply chain",
+      "damage": "$10B",
+      "vector": "MeDoc software update",
+      "status": "Historic"
+    },
+    "SolarWinds_Sunburst": {
+      "year": 2020,
+      "origin": "Russia (SVB)",
+      "payload": "Backdoor in Orion",
+      "damage": "18K+ organizations",
+      "vector": "Compromised build pipeline",
+      "status": "Disrupted"
+    },
+    "CCleaner": {
+      "year": 2017,
+      "origin": "China",
+      "payload": "Backdoor in CCleaner",
+      "damage": "2.27M devices",
+      "vector": "Compromised build",
+      "status": "Disrupted"
+    },
+    "ASUS_LiveUpdate": {
+      "year": 2019,
+      "origin": "China",
+      "payload": "Backdoor in ASUS software",
+      "damage": "1M+ devices",
+      "vector": "Compromised build",
+      "status": "Disrupted"
+    },
+    "Kaseya_VSA": {
+      "year": 2021,
+      "origin": "Russia (REvil)",
+      "payload": "Ransomware via MSP",
+      "damage": "1K+ organizations",
+      "vector": "Compromised VSA",
+      "status": "Disrupted"
+    },
+    "Codecov": {
+      "year": 2021,
+      "origin": "Unknown",
+      "payload": "Bash uploader compromise",
+      "damage": "Unknown",
+      "vector": "Compromised build script",
+      "status": "Disrupted"
+    },
+    "XZ_Backdoor": {
+      "year": 2024,
+      "origin": "Unknown",
+      "payload": "SSH backdoor in liblzma",
+      "damage": "Detected before wide deployment",
+      "vector": "Compromised maintainer account",
+      "status": "Disrupted"
+    },
+    "3CX": {
+      "year": 2023,
+      "origin": "North Korea",
+      "payload": "Backdoor in 3CX",
+      "damage": "600K+ organizations",
+      "vector": "Compromised build pipeline",
+      "status": "Disrupted"
+    },
+    "PyPI_malware": {
+      "year": 2023,
+      "origin": "Unknown",
+      "payload": "Info-stealers in PyPI",
+      "damage": "Unknown",
+      "vector": "Compromised packages",
+      "status": "Ongoing"
+    },
+    "NPM_malware": {
+      "year": 2023,
+      "origin": "Unknown",
+      "payload": "Info-stealers in NPM",
+      "damage": "Unknown",
+      "vector": "Compromised packages",
+      "status": "Ongoing"
+    }
+  },
+  "zero_days": {
+    "Stuxnet_4": {
+      "year": 2010,
+      "origin": "USA/Israel",
+      "payload": "4 zero-days in Stuxnet",
+      "damage": "Unknown",
+      "vector": "USB + network",
+      "status": "Historic"
+    },
+    "EternalBlue": {
+      "year": 2017,
+      "origin": "USA (NSA)",
+      "payload": "SMB exploit (MS17-010)",
+      "damage": "WannaCry + NotPetya",
+      "vector": "Network",
+      "status": "Patched"
+    },
+    "EternalRomance": {
+      "year": 2017,
+      "origin": "USA (NSA)",
+      "payload": "SMB exploit",
+      "damage": "Unknown",
+      "vector": "Network",
+      "status": "Patched"
+    },
+    "EternalChampion": {
+      "year": 2017,
+      "origin": "USA (NSA)",
+      "payload": "SMB exploit",
+      "damage": "Unknown",
+      "vector": "Network",
+      "status": "Patched"
+    },
+    "EternalSynergy": {
+      "year": 2017,
+      "origin": "USA (NSA)",
+      "payload": "SMB exploit",
+      "damage": "Unknown",
+      "vector": "Network",
+      "status": "Patched"
+    },
+    "DoublePulsar": {
+      "year": 2017,
+      "origin": "USA (NSA)",
+      "payload": "SMB backdoor implant",
+      "damage": "Unknown",
+      "vector": "Network",
+      "status": "Patched"
+    },
+    "Log4j": {
+      "year": 2021,
+      "origin": "Apache Foundation",
+      "payload": "RCE in Log4j (CVE-2021-44228)",
+      "damage": "Billions of devices",
+      "vector": "JNDI injection",
+      "status": "Patched"
+    },
+    "Spring4Shell": {
+      "year": 2022,
+      "origin": "Spring Framework",
+      "payload": "RCE in Spring (CVE-2022-22965)",
+      "damage": "Unknown",
+      "vector": "Data binding",
+      "status": "Patched"
+    },
+    "Follina": {
+      "year": 2022,
+      "origin": "Microsoft",
+      "payload": "MSDT RCE (CVE-2022-30190)",
+      "damage": "Unknown",
+      "vector": "Office documents",
+      "status": "Patched"
+    },
+    "ProxyLogon": {
+      "year": 2021,
+      "origin": "Microsoft",
+      "payload": "Exchange RCE (CVE-2021-26855)",
+      "damage": "30K+ servers",
+      "vector": "Exchange server",
+      "status": "Patched"
+    },
+    "ProxyShell": {
+      "year": 2021,
+      "origin": "Microsoft",
+      "payload": "Exchange RCE chain",
+      "damage": "Unknown",
+      "vector": "Exchange server",
+      "status": "Patched"
+    },
+    "Zerologon": {
+      "year": 2020,
+      "origin": "Microsoft",
+      "payload": "Netlogon bypass (CVE-2020-1472)",
+      "damage": "Unknown",
+      "vector": "Network",
+      "status": "Patched"
+    }
+  },
+  "social_engineering": {
+    "Mitnick_SocialEngineering": {
+      "year": 1995,
+      "origin": "USA",
+      "payload": "Phone pretexting",
+      "damage": "Unknown",
+      "vector": "Voice + knowledge",
+      "status": "Historic"
+    },
+    "Nigerian_Prince": {
+      "year": 1990,
+      "origin": "Nigeria",
+      "payload": "Advance-fee fraud",
+      "damage": "$12B+",
+      "vector": "Email",
+      "status": "Ongoing"
+    },
+    "Phishing": {
+      "year": 1996,
+      "origin": "Global",
+      "payload": "Credential theft",
+      "damage": "$54B+",
+      "vector": "Email + web",
+      "status": "Ongoing"
+    },
+    "SpearPhishing": {
+      "year": 2005,
+      "origin": "Global",
+      "payload": "Targeted credential theft",
+      "damage": "Unknown",
+      "vector": "Targeted email",
+      "status": "Ongoing"
+    },
+    "Whaling": {
+      "year": 2008,
+      "origin": "Global",
+      "payload": "CEO fraud",
+      "damage": "$26B+",
+      "vector": "Targeted email",
+      "status": "Ongoing"
+    },
+    "Pretexting": {
+      "year": 2000,
+      "origin": "Global",
+      "payload": "Identity fabrication",
+      "damage": "Unknown",
+      "vector": "Voice + email",
+      "status": "Ongoing"
+    },
+    "Baiting": {
+      "year": 2000,
+      "origin": "Global",
+      "payload": "Malicious USB drops",
+      "damage": "Unknown",
+      "vector": "Physical media",
+      "status": "Ongoing"
+    },
+    "QuidProQuo": {
+      "year": 2005,
+      "origin": "Global",
+      "payload": "Service exchange fraud",
+      "damage": "Unknown",
+      "vector": "Phone + email",
+      "status": "Ongoing"
+    },
+    "Tailgating": {
+      "year": 2000,
+      "origin": "Global",
+      "payload": "Physical access bypass",
+      "damage": "Unknown",
+      "vector": "Physical",
+      "status": "Ongoing"
+    },
+    "Vishing": {
+      "year": 2006,
+      "origin": "Global",
+      "payload": "Voice phishing",
+      "damage": "Unknown",
+      "vector": "Phone calls",
+      "status": "Ongoing"
+    },
+    "Smishing": {
+      "year": 2008,
+      "origin": "Global",
+      "payload": "SMS phishing",
+      "damage": "Unknown",
+      "vector": "SMS",
+      "status": "Ongoing"
+    },
+    "Deepfake_SocialEngineering": {
+      "year": 2019,
+      "origin": "Global",
+      "payload": "AI-generated impersonation",
+      "damage": "$35M+",
+      "vector": "Video + voice",
+      "status": "Ongoing"
+    }
+  },
+  "hardware": {
+    "BadBIOS": {
+      "year": 2013,
+      "origin": "Research/Alleged",
+      "payload": "Firmware-level persistence",
+      "damage": "Unconfirmed",
+      "vector": "USB + audio",
+      "status": "Unconfirmed"
+    },
+    "Industroyer_CrashOverride": {
+      "year": 2016,
+      "origin": "Russia",
+      "payload": "ICS malware",
+      "damage": "Ukraine power grid",
+      "vector": "Network",
+      "status": "Historic"
+    },
+    "Triton_HatMan": {
+      "year": 2017,
+      "origin": "Russia",
+      "payload": "Safety system sabotage",
+      "damage": "Saudi petrochemical plant",
+      "vector": "Network",
+      "status": "Historic"
+    },
+    "Stuxnet_PLC": {
+      "year": 2010,
+      "origin": "USA/Israel",
+      "payload": "PLC manipulation",
+      "damage": "Iranian centrifuges",
+      "vector": "USB + network",
+      "status": "Historic"
+    },
+    "USB_RubberDucky": {
+      "year": 2010,
+      "origin": "Hak5",
+      "payload": "HID injection",
+      "damage": "Research/tool",
+      "vector": "USB",
+      "status": "Tool"
+    },
+    "BashBunny": {
+      "year": 2017,
+      "origin": "Hak5",
+      "payload": "Multi-vector USB attack",
+      "damage": "Research/tool",
+      "vector": "USB",
+      "status": "Tool"
+    },
+    "LAN_Turtle": {
+      "year": 2015,
+      "origin": "Hak5",
+      "payload": "Network implant",
+      "damage": "Research/tool",
+      "vector": "Ethernet",
+      "status": "Tool"
+    },
+    "PacketSquirrel": {
+      "year": 2017,
+      "origin": "Hak5",
+      "payload": "Network implant",
+      "damage": "Research/tool",
+      "vector": "Ethernet",
+      "status": "Tool"
+    },
+    "O.MG_Cable": {
+      "year": 2019,
+      "origin": "MG",
+      "payload": "Wi-Fi implant in cable",
+      "damage": "Research/tool",
+      "vector": "USB/Lightning",
+      "status": "Tool"
+    },
+    "CactusWhale": {
+      "year": 2021,
+      "origin": "China",
+      "payload": "Firmware backdoor",
+      "damage": "Unknown",
+      "vector": "Supply chain",
+      "status": "Active"
+    },
+    "LoJax": {
+      "year": 2018,
+      "origin": "Russia (APT28)",
+      "payload": "UEFI rootkit",
+      "damage": "Unknown",
+      "vector": "Spear-phishing",
+      "status": "Historic"
+    },
+    "MosaicRegressor": {
+      "year": 2020,
+      "origin": "China",
+      "payload": "UEFI bootkit",
+      "damage": "Unknown",
+      "vector": "Supply chain",
+      "status": "Historic"
+    }
+  },
+  "crypto": {
+    "MtGox": {
+      "year": 2014,
+      "origin": "Japan",
+      "payload": "Exchange hack",
+      "damage": "$460M",
+      "vector": "Transaction malleability",
+      "status": "Historic"
+    },
+    "DAO_Hack": {
+      "year": 2016,
+      "origin": "Unknown",
+      "payload": "Smart contract exploit",
+      "damage": "$60M",
+      "vector": "Reentrancy attack",
+      "status": "Historic"
+    },
+    "Coincheck": {
+      "year": 2018,
+      "origin": "Japan",
+      "payload": "Exchange hack",
+      "damage": "$530M",
+      "vector": "Hot wallet compromise",
+      "status": "Historic"
+    },
+    "BitGrail": {
+      "year": 2018,
+      "origin": "Italy",
+      "payload": "Exchange hack",
+      "damage": "$170M",
+      "vector": "Withdrawal exploit",
+      "status": "Historic"
+    },
+    "Binance_Hack": {
+      "year": 2019,
+      "origin": "Malta",
+      "payload": "Exchange hack",
+      "damage": "$40M",
+      "vector": "API key + 2FA bypass",
+      "status": "Historic"
+    },
+    "PolyNetwork": {
+      "year": 2021,
+      "origin": "Cross-chain",
+      "payload": "Smart contract exploit",
+      "damage": "$610M",
+      "vector": "Cross-chain vulnerability",
+      "status": "Returned"
+    },
+    "Ronin_Network": {
+      "year": 2022,
+      "origin": "Vietnam",
+      "payload": "Bridge hack",
+      "damage": "$625M",
+      "vector": "Private key compromise",
+      "status": "Historic"
+    },
+    "Wormhole": {
+      "year": 2022,
+      "origin": "Cross-chain",
+      "payload": "Bridge exploit",
+      "damage": "$320M",
+      "vector": "Signature verification bypass",
+      "status": "Historic"
+    },
+    "Nomad": {
+      "year": 2022,
+      "origin": "Cross-chain",
+      "payload": "Bridge exploit",
+      "damage": "$190M",
+      "vector": "Improper initialization",
+      "status": "Historic"
+    },
+    "Mixin": {
+      "year": 2023,
+      "origin": "Hong Kong",
+      "payload": "Cloud service hack",
+      "damage": "$200M",
+      "vector": "Cloud database compromise",
+      "status": "Historic"
+    },
+    "Euler_Finance": {
+      "year": 2023,
+      "origin": "DeFi",
+      "payload": "Flash loan attack",
+      "damage": "$197M",
+      "vector": "Smart contract exploit",
+      "status": "Partially returned"
+    },
+    "Curve_Finance": {
+      "year": 2023,
+      "origin": "DeFi",
+      "payload": "Compiler vulnerability",
+      "damage": "$70M",
+      "vector": "Vyper compiler bug",
+      "status": "Partially returned"
+    }
+  },
+  "ai_ml": {
+    "adversarial": {
+      "year": 2014,
+      "origin": "Research",
+      "payload": "Adversarial examples",
+      "damage": "Research",
+      "vector": "Perturbed inputs",
+      "status": "Research"
+    },
+    "model_inversion": {
+      "year": 2015,
+      "origin": "Research",
+      "payload": "Training data extraction",
+      "damage": "Research",
+      "vector": "Model queries",
+      "status": "Research"
+    },
+    "membership_inference": {
+      "year": 2017,
+      "origin": "Research",
+      "payload": "Training set membership",
+      "damage": "Research",
+      "vector": "Model queries",
+      "status": "Research"
+    },
+    "data_poisoning": {
+      "year": 2018,
+      "origin": "Research",
+      "payload": "Corrupted training data",
+      "damage": "Research",
+      "vector": "Training data injection",
+      "status": "Research"
+    },
+    "model_stealing": {
+      "year": 2019,
+      "origin": "Research",
+      "payload": "Model extraction",
+      "damage": "Research",
+      "vector": "API queries",
+      "status": "Research"
+    },
+    "EvilGPT": {
+      "year": 2023,
+      "origin": "Research",
+      "payload": "Jailbreak prompts",
+      "damage": "Research",
+      "vector": "Prompt injection",
+      "status": "Research"
+    },
+    "WormGPT": {
+      "year": 2023,
+      "origin": "Underground",
+      "payload": "Malicious LLM",
+      "damage": "Unknown",
+      "vector": "Dark web access",
+      "status": "Underground"
+    },
+    "FraudGPT": {
+      "year": 2023,
+      "origin": "Underground",
+      "payload": "Fraud-enabling LLM",
+      "damage": "Unknown",
+      "vector": "Dark web access",
+      "status": "Underground"
+    },
+    "Deepfake_Generation": {
+      "year": 2017,
+      "origin": "Research",
+      "payload": "AI face swap",
+      "damage": "Unknown",
+      "vector": "Image/video manipulation",
+      "status": "Ongoing"
+    },
+    "Voice_Cloning": {
+      "year": 2018,
+      "origin": "Research",
+      "payload": "AI voice synthesis",
+      "damage": "Unknown",
+      "vector": "Audio samples",
+      "status": "Ongoing"
+    },
+    "LLM_Prompt_Injection": {
+      "year": 2023,
+      "origin": "Research",
+      "payload": "LLM manipulation",
+      "damage": "Unknown",
+      "vector": "Crafted prompts",
+      "status": "Ongoing"
+    }
+  },
+  "physical": {
+    "ATM_skimming": {
+      "year": 2000,
+      "origin": "Global",
+      "payload": "Card + PIN theft",
+      "damage": "$1B+",
+      "vector": "Physical device",
+      "status": "Ongoing"
+    },
+    "POS_malware": {
+      "year": 2013,
+      "origin": "Global",
+      "payload": "Payment card theft",
+      "damage": "Unknown",
+      "vector": "Physical + network",
+      "status": "Ongoing"
+    },
+    "Shoulder_Surfing": {
+      "year": 1980,
+      "origin": "Global",
+      "payload": "Visual credential theft",
+      "damage": "Unknown",
+      "vector": "Physical observation",
+      "status": "Ongoing"
+    },
+    "Dumpster_Diving": {
+      "year": 1980,
+      "origin": "Global",
+      "payload": "Information recovery",
+      "damage": "Unknown",
+      "vector": "Physical waste",
+      "status": "Ongoing"
+    },
+    "Tailgating": {
+      "year": 2000,
+      "origin": "Global",
+      "payload": "Physical access bypass",
+      "damage": "Unknown",
+      "vector": "Physical",
+      "status": "Ongoing"
+    },
+    "Impersonation": {
+      "year": 1990,
+      "origin": "Global",
+      "payload": "Identity fraud",
+      "damage": "Unknown",
+      "vector": "Physical + digital",
+      "status": "Ongoing"
+    },
+    "DNA_theft": {
+      "year": 2018,
+      "origin": "Research",
+      "payload": "Genetic data theft",
+      "damage": "Unknown",
+      "vector": "Biological samples",
+      "status": "Research"
+    }
+  }
+}

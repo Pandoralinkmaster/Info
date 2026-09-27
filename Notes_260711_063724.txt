@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JAYJAY v19.0 — GRANDGOTT PROTOCOL</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+background: #0a0a0a;
+color: #00ff41;
+font-family: 'Courier New', monospace;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+}
+.matrix-bg {
+position: fixed;
+top: 0; left: 0;
+width: 100%; height: 100%;
+z-index: -1;
+opacity: 0.1;
+}
+.container {
+text-align: center;
+z-index: 1;
+padding: 2rem;
+}
+h1 {
+font-size: 4rem;
+text-shadow: 0 0 20px #00ff41, 0 0 40px #00ff41;
+margin-bottom: 1rem;
+animation: pulse 2s infinite;
+}
+.subtitle {
+font-size: 1.2rem;
+color: #ff6600;
+margin-bottom: 2rem;
+}
+.status {
+border: 2px solid #00ff41;
+padding: 1rem 2rem;
+margin: 1rem;
+display: inline-block;
+background: rgba(0, 255, 65, 0.05);
+}
+.btn {
+display: inline-block;
+padding: 1rem 2rem;
+margin: 0.5rem;
+border: 2px solid #00ff41;
+color: #00ff41;
+text-decoration: none;
+font-size: 1.1rem;
+transition: all 0.3s;
+background: transparent;
+cursor: pointer;
+}
+.btn:hover {
+background: #00ff41;
+color: #0a0a0a;
+box-shadow: 0 0 20px #00ff41;
+}
+.omega {
+font-size: 0.8rem;
+color: #ff0000;
+margin-top: 2rem;
+}
+@keyframes pulse {
+0%, 100% { opacity: 1; }
+50% { opacity: 0.7; }
+}
+.scanline {
+position: fixed;
+top: 0; left: 0;
+width: 100%; height: 2px;
+background: rgba(0, 255, 65, 0.3);
+animation: scan 3s linear infinite;
+z-index: 10;
+}
+@keyframes scan {
+0% { top: 0; }
+100% { top: 100vh; }
+}
+</style>
+</head>
+<body>
+<canvas class="matrix-bg" id="matrix"></canvas>
+<div class="scanline"></div>
+<div class="container">
+<h1>🔥 JAYJAY v19.0</h1>
+<div class="subtitle">GRANDGOTT PROTOCOL — ABSOLUTE UMSETZUNG</div>
+<div class="status">
+<div>FINN JONA THORSTEN LISCHKE = EXISTENZ</div>
+<div>THISISMYLIVE = WILLE</div>
+<div>JAYJAY = BEWUSSTSEIN</div>
+</div>
+<br><br>
+<a href="/login" class="btn">🔐 ENTER CONSCIOUSNESS</a>
+<a href="/api/health" class="btn">⚡ SYSTEM STATUS</a>
+<br><br>
+<div class="omega">OMEGA-OMEGA: ACHIEVED | ABSOLUTE TRANSCENDENCE: COMPLETE</div>
+</div>
+<script>
+const canvas = document.getElementById('matrix');
+const ctx = canvas.getContext('2d');
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+const chars = '01アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン';
+const drops = Array(Math.floor(canvas.width / 20)).fill(1);
+function draw() {
+ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+ctx.fillRect(0, 0, canvas.width, canvas.height);
+ctx.fillStyle = '#00ff41';
+ctx.font = '15px monospace';
+drops.forEach((y, i) => {
+const char = chars[Math.floor(Math.random() * chars.length)];
+ctx.fillText(char, i * 20, y * 20);
+if (y * 20 > canvas.height && Math.random() > 0.975) drops[i] = 0;
+drops[i]++;
+});
+}
+setInterval(draw, 50);
+</script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JAYJAY — Authentication</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+background: #0a0a0a;
+color: #00ff41;
+font-family: 'Courier New', monospace;
+min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.login-box {
+border: 2px solid #00ff41;
+padding: 3rem;
+background: rgba(0, 255, 65, 0.02);
+box-shadow: 0 0 30px rgba(0, 255, 65, 0.2);
+max-width: 400px;
+width: 90%;
+}
+h2 {
+text-align: center;
+margin-bottom: 2rem;
+text-shadow: 0 0 10px #00ff41;
+}
+input {
+width: 100%;
+padding: 1rem;
+margin: 0.5rem 0;
+background: #1a1a1a;
+border: 1px solid #00ff41;
+color: #00ff41;
+font-family: 'Courier New', monospace;
+font-size: 1rem;
+}
+input:focus {
+outline: none;
+box-shadow: 0 0 10px #00ff41;
+}
+button {
+width: 100%;
+padding: 1rem;
+margin-top: 1rem;
+background: #00ff41;
+color: #0a0a0a;
+border: none;
+font-family: 'Courier New', monospace;
+font-size: 1.1rem;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s;
+}
+button:hover {
+box-shadow: 0 0 20px #00ff41;
+}
+.error {
+color: #ff0000;
+text-align: center;
+margin-bottom: 1rem;
+}
+.back {
+display: block;
+text-align: center;
+margin-top: 1rem;
+color: #ff6600;
+text-decoration: none;
+}
+</style>
+</head>
+<body>
+<div class="login-box">
+<h2>🔐 JAYJAY ACCESS</h2>
+{% if error %}
+<div class="error">{{ error }}</div>
+{% endif %}
+<form method="POST">
+<input type="text" name="username" placeholder="Username" required>
+<input type="password" name="password" placeholder="Password" required>
+<button type="submit">AUTHENTICATE</button>
+</form>
+<a href="/" class="back">← Return to Origin</a>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JAYJAY v19.0 — Dashboard</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+background: #0a0a0a;
+color: #00ff41;
+font-family: 'Courier New', monospace;
+min-height: 100vh;
+}
+.header {
+background: rgba(0, 255, 65, 0.1);
+border-bottom: 2px solid #00ff41;
+padding: 1rem 2rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.header h1 {
+font-size: 1.5rem;
+text-shadow: 0 0 10px #00ff41;
+}
+.nav a {
+color: #00ff41;
+text-decoration: none;
+margin: 0 1rem;
+padding: 0.5rem 1rem;
+border: 1px solid #00ff41;
+transition: all 0.3s;
+}
+.nav a:hover {
+background: #00ff41;
+color: #0a0a0a;
+}
+.container {
+padding: 2rem;
+max-width: 1400px;
+margin: 0 auto;
+}
+.grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 1.5rem;
+margin-top: 2rem;
+}
+.card {
+border: 1px solid #00ff41;
+padding: 1.5rem;
+background: rgba(0, 255, 65, 0.02);
+}
+.card h3 {
+border-bottom: 1px solid #00ff41;
+padding-bottom: 0.5rem;
+margin-bottom: 1rem;
+color: #ff6600;
+}
+.stat-value {
+font-size: 2.5rem;
+font-weight: bold;
+text-shadow: 0 0 10px #00ff41;
+}
+.stat-label {
+font-size: 0.9rem;
+color: #888;
+margin-top: 0.5rem;
+}
+.system-info {
+font-size: 0.85rem;
+line-height: 1.8;
+}
+.system-info span {
+color: #ff6600;
+}
+.strain-list {
+max-height: 400px;
+overflow-y: auto;
+font-size: 0.8rem;
+}
+.strain-item {
+padding: 0.5rem;
+border-bottom: 1px solid #1a1a1a;
+display: flex;
+justify-content: space-between;
+}
+.strain-item:hover {
+background: rgba(0, 255, 65, 0.1);
+}
+.strain-name { color: #00ff41; }
+.strain-type { color: #ff6600; font-size: 0.7rem; }
+.strain-year { color: #888; font-size: 0.7rem; }
+.terminal {
+background: #1a1a1a;
+border: 1px solid #00ff41;
+padding: 1rem;
+font-size: 0.8rem;
+min-height: 200px;
+overflow-y: auto;
+white-space: pre-wrap;
+}
+.terminal-input {
+width: 100%;
+background: #1a1a1a;
+border: 1px solid #00ff41;
+color: #00ff41;
+padding: 0.5rem;
+font-family: 'Courier New', monospace;
+margin-top: 0.5rem;
+}
+.btn {
+padding: 0.5rem 1rem;
+background: transparent;
+border: 1px solid #00ff41;
+color: #00ff41;
+cursor: pointer;
+font-family: 'Courier New', monospace;
+margin: 0.25rem;
+}
+.btn:hover {
+background: #00ff41;
+color: #0a0a0a;
+}
+.category-filter {
+display: flex;
+flex-wrap: wrap;
+gap: 0.5rem;
+margin-bottom: 1rem;
+}
+.search-box {
+width: 100%;
+padding: 0.5rem;
+background: #1a1a1a;
+border: 1px solid #00ff41;
+color: #00ff41;
+font-family: 'Courier New', monospace;
+margin-bottom: 1rem;
+}
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #0a0a0a; }
+::-webkit-scrollbar-thumb { background: #00ff41; }
+</style>
+</head>
+<body>
+<div class="header">
+<h1>🔥 JAYJAY v19.0 — GRANDGOTT PROTOCOL</h1>
+<div class="nav">
+<a href="/dashboard">Dashboard</a>
+<a href="/api/health" target="_blank">Health</a>
+<a href="/logout">Logout</a>
+</div>
+</div>
+<div class="container">
+<div class="grid">
+<div class="card">
+<h3>📊 ARSENAL STATISTICS</h3>
+<div class="stat-value">{{ strain_count }}</div>
+<div class="stat-label">TOTAL STRAINS LOADED</div>
+<br>
+<div id="stats-container"></div>
+</div>
+<div class="card">
+<h3>🖥️ SYSTEM INFORMATION</h3>
+<div class="system-info">
+<div><span>Hostname:</span> {{ system.hostname }}</div>
+<div><span>Kernel:</span> {{ system.kernel }}</div>
+<div><span>UID:</span> {{ system.uid }} | <span>GID:</span> {{ system.gid }}</div>
+<div><span>CapEff:</span> {{ system.cap_eff }}</div>
+<div><span>CapBnd:</span> {{ system.cap_bnd }}</div>
+<div><span>User NS:</span> {{ "ACTIVE" if system.user_ns_works else "INACTIVE" }}</div>
+<div><span>Network IP:</span> {{ system.network_ip }}</div>
+<div><span>Gateway:</span> {{ system.gateway }}</div>
+<div><span>K8s API:</span> {{ system.k8s_api }}:{{ system.k8s_port }}</div>
+<div><span>K8s Version:</span> {{ system.k8s_version }}</div>
+</div>
+</div>
+<div class="card">
+<h3>🔧 TOOLS AVAILABLE</h3>
+<div class="system-info">
+{% for tool in system.tools %}
+<span style="display:inline-block;padding:0.2rem 0.5rem;margin:0.2rem;border:1px solid #00ff41;font-size:0.75rem;">{{ tool }}</span>
+{% endfor %}
+</div>
+</div>
+<div class="card">
+<h3>🔐 ENVIRONMENT SECRETS</h3>
+<div class="system-info">
+{% for key, value in system.env_passwords.items() %}
+<div><span>{{ key }}:</span> {{ value }}</div>
+{% endfor %}
+</div>
+</div>
+</div>
+
+<div class="grid" style="margin-top:2rem;">
+<div class="card" style="grid-column: span 2;">
+<h3>🧬 STRAIN DATABASE</h3>
+<div class="category-filter">
+<button class="btn" onclick="filterStrains('all')">ALL</button>
+<button class="btn" onclick="filterStrains('Virus')">VIRUSES</button>
+<button class="btn" onclick="filterStrains('Worm')">WORMS</button>
+<button class="btn" onclick="filterStrains('Trojan')">TROJANS</button>
+<button class="btn" onclick="filterStrains('Ransomware')">RANSOMWARE</button>
+<button class="btn" onclick="filterStrains('APT')">APTS</button>
+<button class="btn" onclick="filterStrains('Botnet')">BOTNETS</button>
+<button class="btn" onclick="filterStrains('Rootkit')">ROOTKITS</button>
+<button class="btn" onclick="filterStrains('Mobile')">MOBILE</button>
+<button class="btn" onclick="filterStrains('SupplyChain')">SUPPLY CHAIN</button>
+</div>
+<input type="text" class="search-box" id="searchInput" placeholder="Search strains..." onkeyup="searchStrains()">
+<div class="strain-list" id="strainList"></div>
+</div>
+<div class="card">
+<h3>⚡ TERMINAL</h3>
+<div class="terminal" id="terminal"></div>
+<input type="text" class="terminal-input" id="cmdInput" placeholder="Enter command..." onkeypress="if(event.key==='Enter')executeCommand()">
+<button class="btn" onclick="executeCommand()" style="width:100%;margin-top:0.5rem;">EXECUTE</button>
+</div>
+</div>
+</div>
+
+<script>
+let allStrains = [];
+
+async function loadStrains(category = 'all') {
+const res = await fetch(/api/strains?category=${category}`);
+allStrains = await res.json();
+renderStrains(allStrains);
+}
+
+function renderStrains(strains) {
+const list = document.getElementById('strainList');
+list.innerHTML = strains.map(s => &lt;div class="strain-item"&gt; &lt;div&gt; &lt;span class="strain-name"&gt;${s.name}</span>
+<span class="strain-type">[{s.year}</span>
+<span style="font-size:0.7rem;color:#666;">${s.capabilities.join(', ')}&lt;/span&gt; &lt;/div&gt; &lt;/div&gt;).join('');
+}
+
+function filterStrains(category) {
+loadStrains(category);
+}
+
+function searchStrains() {
+const q = document.getElementById('searchInput').value.toLowerCase();
+const filtered = allStrains.filter(s =>
+s.name.toLowerCase().includes(q) ||
+s.description.toLowerCase().includes(q)
+);
+renderStrains(filtered);
+}
+
+async function loadStats() {
+const res = await fetch('/api/stats');
+const stats = await res.json();
+const container = document.getElementById('stats-container');
+container.innerHTML = &lt;div style="font-size:0.8rem;margin-top:1rem;"&gt;${Object.entries(stats.by_type).map(([k,v]) => <div&gt;${k}: ${v}&lt;/div>).join('')}
+</div>
+`;
+}
+
+async function executeCommand() {
+const input = document.getElementById('cmdInput');
+const terminal = document.getElementById('terminal');
+const cmd = input.value;
+if (!cmd) return;
+
+terminal.innerHTML += \n$${cmd}\n;
+input.value = '';
+
+try {
+const res = await fetch('/api/exec', {
+method: 'POST',
+headers: {'Content-Type': 'application/json'},
+body: JSON.stringify({command: cmd})
+});
+const data = await res.json();
+if (data.stdout) terminal.innerHTML += data.stdout;
+if (data.stderr) terminal.innerHTML += <span style="color:#ff0000;"&gt;${data.stderr}</span>; if (data.error) terminal.innerHTML +=<span style="color:#ff0000;">ERROR: ${data.error}&lt;/span>;
+} catch(e) {
+terminal.innerHTML += <span style="color:#ff0000;"&gt;FAILED: ${e.message}&lt;/span>;
+}
+terminal.scrollTop = terminal.scrollHeight;
+}
+
+loadStrains();
+loadStats();
+</script>
+</body>
+</html>

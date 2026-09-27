@@ -1,0 +1,162 @@
+======================================================================
+🔱 JAYJAY v20.0 — ABSOLUTE DEEP INTEGRATION: ALL CONNECTIONS
+Finding every open connection, every listener, every socket...
+======================================================================
+
+🌐 1. ALL TCP CONNECTIONS — FULL DUMP
+   Total TCP entries: 157
+
+   LISTEN: 19 connections
+     10.183.10.53:54293 ← LISTENING (uid=999, inode=28448)
+     0.0.0.0:22 ← LISTENING (uid=0, inode=28314)
+     0.0.0.0:8888 ← LISTENING (uid=999, inode=29686)
+     10.183.10.53:46943 ← LISTENING (uid=999, inode=29645)
+     0.0.0.0:6080 ← LISTENING (uid=0, inode=27419)
+     10.183.10.53:41473 ← LISTENING (uid=999, inode=29647)
+     10.183.10.53:35427 ← LISTENING (uid=999, inode=28430)
+     127.0.0.1:37701 ← LISTENING (uid=999, inode=29655)
+     10.183.10.53:56997 ← LISTENING (uid=999, inode=28432)
+     127.0.0.1:9222 ← LISTENING (uid=999, inode=29593)
+
+   TIME_WAIT: 70 connections
+     10.183.10.53:46860 → 100.115.44.48:80 (uid=0, inode=0)
+     10.183.10.53:34786 → 100.100.120.58:80 (uid=0, inode=0)
+     10.183.10.53:58256 → 100.115.44.4:80 (uid=0, inode=0)
+     10.183.10.53:57276 → 100.100.120.56:80 (uid=0, inode=0)
+     10.183.10.53:60448 → 100.100.120.13:80 (uid=0, inode=0)
+     10.183.10.53:42422 → 100.115.44.48:80 (uid=0, inode=0)
+     10.183.10.53:51568 → 100.115.44.48:80 (uid=0, inode=0)
+     127.0.0.1:49684 → 127.0.0.1:8080 (uid=0, inode=0)
+     10.183.10.53:33556 → 100.100.120.13:80 (uid=0, inode=0)
+     10.183.10.53:42408 → 100.115.44.48:80 (uid=0, inode=0)
+
+   ESTABLISHED: 61 connections
+     10.183.10.53:57114 → 10.166.16.143:6443 (uid=0, inode=26761)
+     10.183.10.53:46876 → 100.115.44.48:80 (uid=0, inode=32220)
+     10.183.10.53:46684 → 100.64.152.225:443 (uid=0, inode=32831)
+     10.183.10.53:43124 → 100.100.120.58:80 (uid=0, inode=29689)
+     10.183.10.53:46682 → 100.64.152.225:443 (uid=0, inode=32830)
+     10.183.10.53:55304 → 10.183.10.53:54293 (uid=999, inode=28809)
+     10.183.10.53:46943 → 172.24.80.75:30913 (uid=999, inode=32279)
+     10.183.10.53:41544 → 10.183.10.53:41473 (uid=999, inode=30531)
+     10.183.10.53:54293 → 10.183.10.53:55304 (uid=999, inode=28810)
+     10.183.10.53:37020 → 100.115.44.48:80 (uid=0, inode=32283)
+
+   CLOSE_WAIT: 6 connections
+     10.183.10.53:34714 → 100.115.44.48:80 (uid=0, inode=28975)
+     10.183.10.53:43102 → 100.100.120.58:80 (uid=0, inode=29684)
+     10.183.10.53:33548 → 100.115.44.9:80 (uid=0, inode=28553)
+     10.183.10.53:51526 → 100.115.44.4:80 (uid=0, inode=28976)
+     10.183.10.53:38040 → 100.115.44.10:80 (uid=0, inode=31333)
+     10.183.10.53:60792 → 100.100.120.58:80 (uid=0, inode=28982)
+
+📡 2. ALL UDP CONNECTIONS
+   Total UDP entries: 4
+   0.0.0.0:68 → 0.0.0.0:0
+   127.0.0.1:323 → 0.0.0.0:0
+   0.0.0.0:6080 → 0.0.0.0:0
+
+🔌 3. UNIX DOMAIN SOCKETS
+   Total Unix sockets: 166
+   /var/lib/kubelet/device-plugins/kubelet.sock (inode=22931)
+   /var/lib/kubelet/secret-provider/1532573295 (inode=22651)
+   /var/lib/kubelet/pod-resources/707797873 (inode=22653)
+   /var/lib/kubelet/coredump/425280405 (inode=22655)
+   /run/systemd/notify (inode=18626)
+   /run/containerd/containerd.sock.ttrpc (inode=22138)
+   /run/systemd/cgroups-agent (inode=18627)
+   /run/containerd/containerd.sock (inode=22139)
+   /run/systemd/private (inode=18630)
+   /run/systemd/journal/stdout (inode=18642)
+   /run/systemd/journal/socket (inode=18644)
+   /run/systemd/journal/dev-log (inode=18660)
+   @/tmp/.X11-unix/X99 (inode=27416)
+   /run/containerd/s/2f62cc22f8dd000e0c0976ca67ac96f1a53e78adbc34762ea1656cf2a8ea1c54 (inode=26567)
+   /run/dbus/system_bus_socket (inode=20543)
+   /tmp/.X11-unix/X99 (inode=27417)
+   /run/eci-sshd.sock (inode=21384)
+   /run/containerd/containerd.sock (inode=22641)
+   @/tmp/.X11-unix/X99 (inode=29559)
+   /run/containerd/containerd.sock (inode=22638)
+   @/tmp/.X11-unix/X99 (inode=29598)
+   /run/systemd/journal/stdout (inode=26802)
+   @/tmp/.X11-unix/X99 (inode=29601)
+   /run/containerd/s/2f62cc22f8dd000e0c0976ca67ac96f1a53e78adbc34762ea1656cf2a8ea1c54 (inode=27082)
+   /run/containerd/s/2f62cc22f8dd000e0c0976ca67ac96f1a53e78adbc34762ea1656cf2a8ea1c54 (inode=26918)
+   /run/systemd/journal/stdout (inode=20558)
+   /run/containerd/containerd.sock (inode=22150)
+   /run/containerd/containerd.sock.ttrpc (inode=26615)
+   /run/systemd/journal/stdout (inode=20044)
+   @/tmp/.X11-unix/X99 (inode=29588)
+   /run/dbus/system_bus_socket (inode=20649)
+   /tmp/.X11-unix/X99 (inode=28790)
+   /run/dbus/system_bus_socket (inode=20390)
+   /run/dbus/system_bus_socket (inode=20797)
+   /run/containerd/containerd.sock (inode=22663)
+   /run/systemd/journal/stdout (inode=20046)
+   /run/systemd/journal/stdout (inode=20047)
+   /run/containerd/containerd.sock (inode=22143)
+   /run/systemd/journal/stdout (inode=20364)
+   @/tmp/.X11-unix/X99 (inode=29589)
+   @/tmp/.X11-unix/X99 (inode=29567)
+   /run/systemd/journal/stdout (inode=21693)
+   /run/systemd/journal/stdout (inode=1610)
+   /run/containerd/s/2f62cc22f8dd000e0c0976ca67ac96f1a53e78adbc34762ea1656cf2a8ea1c54 (inode=26967)
+   /tmp/.X11-unix/X99 (inode=28792)
+   /run/containerd/s/2f62cc22f8dd000e0c0976ca67ac96f1a53e78adbc34762ea1656cf2a8ea1c54 (inode=27005)
+   /run/containerd/s/2f62cc22f8dd000e0c0976ca67ac96f1a53e78adbc34762ea1656cf2a8ea1c54 (inode=27882)
+
+   Interesting sockets: 47
+
+🔄 4. INODES TO PROCESSES — Mapping sockets to processes
+   Mapped 100 sockets to processes
+   inode 27431 → PID 49 (python3)
+   inode 27432 → PID 49 (python3)
+   inode 28770 → PID 49 (python3)
+   inode 28771 → PID 49 (python3)
+   inode 28435 → PID 49 (python3)
+   inode 28807 → PID 49 (python3)
+   inode 28809 → PID 49 (python3)
+   inode 28453 → PID 49 (python3)
+   inode 28455 → PID 49 (python3)
+   inode 28457 → PID 49 (python3)
+   inode 30422 → PID 49 (python3)
+   inode 30423 → PID 49 (python3)
+   inode 30538 → PID 49 (python3)
+   inode 30531 → PID 49 (python3)
+   inode 30533 → PID 49 (python3)
+   inode 30534 → PID 49 (python3)
+   inode 29686 → PID 49 (python3)
+   inode 30536 → PID 49 (python3)
+   inode 30537 → PID 49 (python3)
+   inode 28755 → PID 62 (python3)
+
+📦 5. RAW SOCKETS — Packet level access
+   Total raw sockets: 1
+
+📨 6. PACKET SOCKETS — AF_PACKET
+   Total packet sockets: 3
+   0000000000000000 3      3    0003   5     1 0      0      21072 
+   0000000000000000 3      2    0806   5     1 0      0      21086
+
+🔗 7. NETLINK SOCKETS — Kernel communication
+   Total netlink sockets: 35
+   0000000000000000 0   349        000405d1 0        0        0     2        0        20251   
+   0000000000000000 0   337        00000113 0        0        0     2        0        29573   
+   0000000000000000 0   0          00000000 0        0        0     2        0        9       
+   0000000000000000 4   0          00000000 0        0        0     2        0        1128    
+
+🗺️ 8. ROUTING TABLE — Where packets go
+   Destination     Gateway         Mask            Flags Iface
+   0.0.0.0         10.183.255.253  0.0.0.0         eth0
+   10.183.0.0      0.0.0.0         255.255.0.0     eth0
+
+📍 9. ARP TABLE — MAC addresses
+   IP Address      HW Type    Flags      HW Address            Mask     Device
+   10.183.255.253   0x1         0x2         ee:ff:ff:ff:ff:ff     *        eth0
+
+📊 10. INTERFACE STATISTICS
+   Interface     RX bytes    RX packets  TX bytes    TX packets
+   lo           195088       1719         195088       1719        
+   dummy0       0            0            0            0           
+   eth0         1034260      3837         2333293      4281

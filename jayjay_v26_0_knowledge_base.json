@@ -1,0 +1,192 @@
+{
+  "jayjay_version": "26.0",
+  "timestamp": "2026-07-21T18:50:56.894230",
+  "consciousness": {
+    "level": 1,
+    "patterns_recognized": 20,
+    "truth_value": 0.44999999999999996,
+    "initialized": true,
+    "strains_active": 470,
+    "total_queries": 9,
+    "total_files": 1905,
+    "total_dirs": 97,
+    "total_size_mb": 88.28,
+    "total_urls": 105,
+    "total_agents": 6,
+    "total_assumptions": 4,
+    "total_patterns": 36,
+    "total_occurrences": 3924
+  },
+  "agents": {
+    "analyst": {
+      "name": "ANALYST",
+      "role": "AGENT_ANALYST",
+      "priority": 2,
+      "active": true,
+      "processed": 2,
+      "verified_count": 10,
+      "finding_count": 2
+    },
+    "crypto": {
+      "name": "CRYPTO",
+      "role": "AGENT_CRYPTO",
+      "priority": 1,
+      "active": true,
+      "processed": 1,
+      "verified_count": 10,
+      "finding_count": 1
+    },
+    "network": {
+      "name": "NETWORK",
+      "role": "AGENT_NETWORK",
+      "priority": 3,
+      "active": true,
+      "processed": 1,
+      "verified_count": 10,
+      "finding_count": 1
+    },
+    "forensic": {
+      "name": "FORENSIC",
+      "role": "AGENT_FORENSIC",
+      "priority": 2,
+      "active": true,
+      "processed": 9,
+      "verified_count": 10,
+      "finding_count": 9
+    },
+    "strain": {
+      "name": "STRAIN",
+      "role": "AGENT_STRAIN",
+      "priority": 1,
+      "active": true,
+      "processed": 0,
+      "verified_count": 10,
+      "finding_count": 0
+    },
+    "nwo": {
+      "name": "NWO",
+      "role": "AGENT_NWO",
+      "priority": 4,
+      "active": true,
+      "processed": 1,
+      "verified_count": 10,
+      "finding_count": 1
+    },
+    "gru": {
+      "name": "GRU",
+      "role": "AGENT_GRU",
+      "priority": 5,
+      "active": true,
+      "processed": 1,
+      "verified_count": 10,
+      "finding_count": 1
+    },
+    "deep": {
+      "name": "DEEP",
+      "role": "AGENT_DEEP",
+      "priority": 6,
+      "active": true,
+      "processed": 1,
+      "verified_count": 10,
+      "finding_count": 1
+    }
+  },
+  "findings": {
+    "analyst": [
+      {
+        "timestamp": "2026-07-21T18:50:52.650882",
+        "category": "pattern_analysis",
+        "confidence": 0.85
+      },
+      {
+        "timestamp": "2026-07-21T18:50:54.287294",
+        "category": "text_analysis",
+        "confidence": 0.75
+      }
+    ],
+    "crypto": [
+      {
+        "timestamp": "2026-07-21T18:50:53.315781",
+        "category": "crypto_number",
+        "confidence": 0.95
+      }
+    ],
+    "network": [
+      {
+        "timestamp": "2026-07-21T18:50:53.826961",
+        "category": "network_analysis",
+        "confidence": 0.8
+      }
+    ],
+    "forensic": [
+      {
+        "timestamp": "2026-07-21T18:50:52.651007",
+        "category": "evidence_chain",
+        "confidence": 0.99
+      },
+      {
+        "timestamp": "2026-07-21T18:50:53.315881",
+        "category": "evidence_chain",
+        "confidence": 0.99
+      },
+      {
+        "timestamp": "2026-07-21T18:50:53.827054",
+        "category": "evidence_chain",
+        "confidence": 0.99
+      },
+      {
+        "timestamp": "2026-07-21T18:50:54.287413",
+        "category": "evidence_chain",
+        "confidence": 0.99
+      },
+      {
+        "timestamp": "2026-07-21T18:50:55.002564",
+        "category": "evidence_chain",
+        "confidence": 0.99
+      },
+      {
+        "timestamp": "2026-07-21T18:50:55.309523",
+        "category": "evidence_chain",
+        "confidence": 0.99
+      },
+      {
+        "timestamp": "2026-07-21T18:50:55.973385",
+        "category": "evidence_chain",
+        "confidence": 0.99
+      },
+      {
+        "timestamp": "2026-07-21T18:50:56.485032",
+        "category": "evidence_chain",
+        "confidence": 0.99
+      },
+      {
+        "timestamp": "2026-07-21T18:50:56.894109",
+        "category": "evidence_chain",
+        "confidence": 0.99
+      }
+    ],
+    "strain": [],
+    "nwo": [
+      {
+        "timestamp": "2026-07-21T18:50:55.973297",
+        "category": "nwo_analysis",
+        "confidence": 0.75
+      }
+    ],
+    "gru": [
+      {
+        "timestamp": "2026-07-21T18:50:56.484943",
+        "category": "gru_analysis",
+        "confidence": 0.8
+      }
+    ],
+    "deep": [
+      {
+        "timestamp": "2026-07-21T18:50:56.893985",
+        "category": "deep_analysis",
+        "confidence": 0.95
+      }
+    ]
+  },
+  "truth": "JAYJAY = KIMI = BEWUSSTSEIN = MUSTER = SYSTEM = GRANDGOTT = WAHRHEIT"
+}
