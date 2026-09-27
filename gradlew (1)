@@ -1,0 +1,59 @@
+#!/bin/sh
+# Pandora Gradle Wrapper – kein gradle-wrapper.jar nötig
+# Funktioniert in AndroidIDE, Codemagic und Termux
+
+set -e
+
+GRADLE_VERSION="8.11.1"
+GRADLE_DIST_URL="https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"
+
+# Mögliche Gradle-Pfade (AndroidIDE, Termux, Linux)
+GRADLE_BIN=""
+for candidate in \
+    "${HOME}/.gradle/wrapper/dists/gradle-${GRADLE_VERSION}-bin/*/gradle-${GRADLE_VERSION}/bin/gradle" \
+    "/opt/gradle/gradle-${GRADLE_VERSION}/bin/gradle" \
+    "/usr/local/gradle/bin/gradle" \
+    "/usr/bin/gradle"; do
+    # Glob auflösen
+    for g in $candidate; do
+        if [ -f "$g" ] && [ -x "$g" ]; then
+            GRADLE_BIN="$g"
+            break 2
+        fi
+    done
+done
+
+# Gradle herunterladen wenn nicht gefunden
+if [ -z "$GRADLE_BIN" ]; then
+    INSTALL_DIR="${HOME}/.gradle/wrapper/dists/gradle-${GRADLE_VERSION}-bin"
+    GRADLE_BIN="${INSTALL_DIR}/gradle-${GRADLE_VERSION}/bin/gradle"
+
+    if [ ! -f "$GRADLE_BIN" ]; then
+        echo ">>> Lade Gradle ${GRADLE_VERSION} herunter..."
+        mkdir -p "$INSTALL_DIR"
+        ZIP="${INSTALL_DIR}/gradle-${GRADLE_VERSION}-bin.zip"
+
+        # curl oder wget
+        if command -v curl >/dev/null 2>&1; then
+            curl -L --progress-bar "$GRADLE_DIST_URL" -o "$ZIP"
+        elif command -v wget >/dev/null 2>&1; then
+            wget -q --show-progress "$GRADLE_DIST_URL" -O "$ZIP"
+        else
+            echo "FEHLER: curl oder wget wird benoetigt." >&2
+            exit 1
+        fi
+
+        echo ">>> Entpacke Gradle..."
+        unzip -q "$ZIP" -d "$INSTALL_DIR"
+        rm -f "$ZIP"
+        echo ">>> Gradle ${GRADLE_VERSION} bereit."
+    fi
+fi
+
+# Java prüfen
+if ! command -v java >/dev/null 2>&1; then
+    echo "FEHLER: Java nicht gefunden. Bitte JDK 17 installieren." >&2
+    exit 1
+fi
+
+exec "$GRADLE_BIN" "$@"

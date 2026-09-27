@@ -1,0 +1,32 @@
+#!/bin/sh
+# Pandora Gradle Wrapper – kein gradle-wrapper.jar nötig
+# Kompatibel mit AndroidIDE, Codemagic, Termux
+
+set -e
+
+GRADLE_VERSION="8.4"
+GRADLE_DIST_URL="https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"
+INSTALL_DIR="${HOME}/.gradle/wrapper/dists/gradle-${GRADLE_VERSION}-bin"
+GRADLE_BIN="${INSTALL_DIR}/gradle-${GRADLE_VERSION}/bin/gradle"
+
+# Gradle herunterladen wenn nicht vorhanden
+if [ ! -f "$GRADLE_BIN" ]; then
+    echo ">>> Lade Gradle ${GRADLE_VERSION} herunter..."
+    mkdir -p "$INSTALL_DIR"
+    ZIP="${INSTALL_DIR}/gradle-${GRADLE_VERSION}-bin.zip"
+
+    if command -v curl >/dev/null 2>&1; then
+        curl -L --progress-bar "$GRADLE_DIST_URL" -o "$ZIP"
+    elif command -v wget >/dev/null 2>&1; then
+        wget -q --show-progress "$GRADLE_DIST_URL" -O "$ZIP"
+    else
+        echo "FEHLER: curl oder wget fehlt." >&2; exit 1
+    fi
+
+    echo ">>> Entpacke..."
+    unzip -q "$ZIP" -d "$INSTALL_DIR"
+    rm -f "$ZIP"
+    echo ">>> Gradle ${GRADLE_VERSION} bereit."
+fi
+
+exec "$GRADLE_BIN" "$@"
