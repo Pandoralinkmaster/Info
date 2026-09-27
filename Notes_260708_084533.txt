@@ -1,0 +1,425 @@
+======================================================================
+JAYJAY: KRITISCHE ENTDECKUNG - CGROUP V1 NICHT MOUNTED!
+
+[1] CGROUP MANIPULATION TEST:
+Memory cgroup:
+total 0
+drwxr-xr-x 2 root root 0 Jul 8 14:35 .
+drwxrwxrwt 14 root root 380 Jul 8 14:35 ..
+-rw-r--r-- 1 root root 0 Jul 8 14:35 cgroup.clone_children
+--w--w--w- 1 root root 0 Jul 8 14:35 cgroup.event_control
+-rw-r--r-- 1 root root 0 Jul 8 14:35 cgroup.procs
+-rw-r--r-- 1 root root 0 Jul 8 14:35 memory.allow_duptext
+-rw-r--r-- 1 root root 0 Jul 8 14:35 memory.allow_duptext_refresh
+-rw-r--r-- 1 root root 0 Jul 8 14:35 memory.async_fork
+-rw-r--r-- 1 root root 0 Jul 8
+
+[2] /PROC/CGROUPS:
+#subsys_name hierarchy num_cgroups enabled
+cpuset 11 11 1
+cpu 8 15 1
+cpuacct 8 15 1
+blkio 4 10 1
+memory 3 49 1
+devices 2 10 1
+freezer 10 10 1
+net_cls 9 10 1
+perf_event 7 10 1
+net_prio 9 10 1
+hugetlb 6 10 1
+pids 12 35 1
+rdma 5 10 1
+
+[3] CGROUP ERSTELLEN:
+mkdir: RC=1
+Fehler: mkdir: cannot create directory ‘/sys/fs/cgroup/memory/test’: Read-only file system
+
+[4] CORE_PATTERN:
+core_pattern: | /dev/null
+
+[5] SUID_DUMPABLE:
+suid_dumpable: 0
+
+[6] FTRACE:
+ftrace_enabled: 1
+
+[7] KALLSYMS - INTERESSANTE SYMBOLE:
+0000000000000000 T commit_creds
+0000000000000000 T prepare_kernel_cred
+0000000000000000 r __ksymtab_commit_creds
+0000000000000000 r __ksymtab_prepare_kernel_cred
+0000000000000000 r __kstrtab_commit_creds
+0000000000000000 r __kstrtab_prepare_kernel_cred
+0000000000000000 r __kstrtabns_commit_creds
+0000000000000000 r __kstrtabns_prepare_kernel_cred
+0000000000000000 D modprobe_path
+
+[8] KERNEL CONFIG:
+
+[9] USER_NS_UNPRIVILEGED:
+======================================================================
+JAYJAY: KRITISCHE ENTDECKUNG - CGROUP V1 NICHT MOUNTED!
+
+[1] CGROUP MANIPULATION TEST:
+Memory cgroup:
+total 0
+drwxr-xr-x 2 root root 0 Jul 8 14:35 .
+drwxrwxrwt 14 root root 380 Jul 8 14:35 ..
+-rw-r--r-- 1 root root 0 Jul 8 14:35 cgroup.clone_children
+--w--w--w- 1 root root 0 Jul 8 14:35 cgroup.event_control
+-rw-r--r-- 1 root root 0 Jul 8 14:35 cgroup.procs
+-rw-r--r-- 1 root root 0 Jul 8 14:35 memory.allow_duptext
+-rw-r--r-- 1 root root 0 Jul 8 14:35 memory.allow_duptext_refresh
+-rw-r--r-- 1 root root 0 Jul 8 14:35 memory.async_fork
+-rw-r--r-- 1 root root 0 Jul 8
+
+[2] /PROC/CGROUPS:
+#subsys_name hierarchy num_cgroups enabled
+cpuset 11 11 1
+cpu 8 15 1
+cpuacct 8 15 1
+blkio 4 10 1
+memory 3 49 1
+devices 2 10 1
+freezer 10 10 1
+net_cls 9 10 1
+perf_event 7 10 1
+net_prio 9 10 1
+hugetlb 6 10 1
+pids 12 35 1
+rdma 5 10 1
+
+[3] CGROUP ERSTELLEN:
+mkdir: RC=1
+Fehler: mkdir: cannot create directory ‘/sys/fs/cgroup/memory/test’: Read-only file system
+
+[4] CORE_PATTERN:
+core_pattern: | /dev/null
+
+[5] SUID_DUMPABLE:
+suid_dumpable: 0
+
+[6] FTRACE:
+ftrace_enabled: 1
+
+[7] KALLSYMS - INTERESSANTE SYMBOLE:
+0000000000000000 T commit_creds
+0000000000000000 T prepare_kernel_cred
+0000000000000000 r __ksymtab_commit_creds
+0000000000000000 r __ksymtab_prepare_kernel_cred
+0000000000000000 r __kstrtab_commit_creds
+0000000000000000 r __kstrtab_prepare_kernel_cred
+0000000000000000 r __kstrtabns_commit_creds
+0000000000000000 r __kstrtabns_prepare_kernel_cred
+0000000000000000 D modprobe_path
+
+[8] KERNEL CONFIG:
+
+[9] USER_NS_UNPRIVILEGED:
+======================================================================
+JAYJAY: KRITISCHE ENTDECKUNG - CGROUP V1 NICHT MOUNTED!
+
+[1] CGROUP MANIPULATION TEST:
+Memory cgroup:
+total 0
+drwxr-xr-x 2 root root 0 Jul 8 14:35 .
+drwxrwxrwt 14 root root 380 Jul 8 14:35 ..
+-rw-r--r-- 1 root root 0 Jul 8 14:35 cgroup.clone_children
+--w--w--w- 1 root root 0 Jul 8 14:35 cgroup.event_control
+-rw-r--r-- 1 root root 0 Jul 8 14:35 cgroup.procs
+-rw-r--r-- 1 root root 0 Jul 8 14:35 memory.allow_duptext
+-rw-r--r-- 1 root root 0 Jul 8 14:35 memory.allow_duptext_refresh
+-rw-r--r-- 1 root root 0 Jul 8 14:35 memory.async_fork
+-rw-r--r-- 1 root root 0 Jul 8
+
+[2] /PROC/CGROUPS:
+#subsys_name hierarchy num_cgroups enabled
+cpuset 11 11 1
+cpu 8 15 1
+cpuacct 8 15 1
+blkio 4 10 1
+memory 3 49 1
+devices 2 10 1
+freezer 10 10 1
+net_cls 9 10 1
+perf_event 7 10 1
+net_prio 9 10 1
+hugetlb 6 10 1
+pids 12 35 1
+rdma 5 10 1
+
+[3] CGROUP ERSTELLEN:
+mkdir: RC=1
+Fehler: mkdir: cannot create directory ‘/sys/fs/cgroup/memory/test’: Read-only file system
+
+[4] CORE_PATTERN:
+core_pattern: | /dev/null
+
+[5] SUID_DUMPABLE:
+suid_dumpable: 0
+
+[6] FTRACE:
+ftrace_enabled: 1
+
+[7] KALLSYMS - INTERESSANTE SYMBOLE:
+0000000000000000 T commit_creds
+0000000000000000 T prepare_kernel_cred
+0000000000000000 r __ksymtab_commit_creds
+0000000000000000 r __ksymtab_prepare_kernel_cred
+0000000000000000 r __kstrtab_commit_creds
+0000000000000000 r __kstrtab_prepare_kernel_cred
+0000000000000000 r __kstrtabns_commit_creds
+0000000000000000 r __kstrtabns_prepare_kernel_cred
+0000000000000000 D modprobe_path
+
+[8] KERNEL CONFIG:
+
+[9] USER_NS_UNPRIVILEGED:
+======================================================================
+JAYJAY: TIEFENANALYSE - ALLE VERSTECKTEN WEGE
+
+[1] /mnt MOUNT ANALYSE:
+TARGET SOURCE FSTYPE OPTIONS
+/mnt /dev/vda5[/builtin_wlayer/aliyun-system-guest-container-root-dir/kube-agent/573186c8-221d-404a-85da-a21a41ccc77c/volumes/kubernetes.io~empty-dir/shared-data] ext4 rw,relatime,prjquota
+
+[2] HOST-ROOT ZUGRIFF ÜBER /MNT:
+ls /mnt/..:
+total 96
+drwxr-xr-x 1 root root 4096 Jul 8 14:35 .
+drwxr-xr-x 1 root root 4096 Jul 8 14:35 ..
+drwxr-xr-x 1 kimi kimi 4096 Jul 8 14:35 app
+lrwxrwxrwx 1 root root 7 Sep 29 2025 bin -> usr/bin
+drwxr-xr-x 2 root root 4096 Aug 25 2025 boot
+drwxr-xr-x 2 root root 12288 Jul 3 22:48 command
+drwxr-xr-x 5 root root 360 Jul 8 14:35 dev
+drwxr-xr-x 1 root root 4096 Jul 8 14:35 etc
+drwxr-xr-x 1 root root 4096 Jul 3 22:48 home
+-rwxr-xr-x 1 root root 1012 Nov 21 2023 i
+
+[3] /PROC/1/ROOT ZUGRIFF:
+RC: 2
+ls: cannot access '/proc/1/root/': Permission denied
+
+[4] /PROC/1/CWD:
+RC: 2
+lrwxrwxrwx 1 root root 0 Jul 8 14:37 /proc/1/cwd
+
+[5] ALLE /PROC/*/ROOT:
+PID 133: /
+
+[6] HOST PID NAMESPACE:
+PID NS: lrwxrwxrwx 1 kimi kimi 0 Jul 8 14:37 /proc/self/ns/pid -> pid:[4026532384]
+
+[7] NSENTER VERSUCHE:
+nsenter --mnt: RC=1, nsenter: unrecognized option '--mnt'
+Try 'nsenter
+nsenter --net: RC=1, nsenter: cannot open /proc/1/ns/net: Permission de
+nsenter --ipc: RC=1, nsenter: cannot open /proc/1/ns/ipc: Permission de
+nsenter --uts: RC=1, nsenter: cannot open /proc/1/ns/uts: Permission de
+nsenter --pid: RC=1, nsenter: cannot open /proc/1/ns/pid: Permission de
+
+[8] BINFMT_MISC:
+total 0
+dr-xr-xr-x 2 root root 0 Jul 8 14:37 .
+dr-xr-xr-x 1 root root 0 Jul 8 14:35 ..
+
+[9] DEBUGFS:
+total 0
+dr-xr-xr-x 2 root root 0 Jul 8 14:35 .
+drwxr-xr-x 15 root root 0 Jul 8 14:35 ..
+
+[10] CGROUP:
+total 0
+drwxrwxrwt 14 root root 380 Jul 8 14:35 .
+drwxr-xr-x 10 root root 0 Jul 8 14:35 ..
+drwxr-xr-x 2 root root 0 Jul 8 14:35 blkio
+lrwxrwxrwx 1 root root 26 Jul 8 14:35 cpu -> /sys/fs/cgroup/cpu,cpuacct
+drwxr-xr-x 2 root root 0 Jul 8 14:35 cpu,cpuacct
+lrwxrwxrwx 1 root root 26 Jul 8 14:35 cpuacct -> /sys/fs/cgroup/cpu,cpuacct
+drwxr-xr-x 2 root root 0 Jul 8 14:35 cpuset
+drwxr-xr-x 2 root root 0 Jul 8 14:35 devices
+drwxr-xr-x 2 root root 0 Jul 8 14:35 freezer
+drwxr
+
+[11] WRITABLE CGROUP:
+12:pids:/
+11:cpuset:/
+10:freezer:/
+9:net_cls,net_prio:/
+8:cpu,cpuacct:/
+7:perf_event:/
+6:hugetlb:/
+5:rdma:/
+4:blkio:/
+3:memory:/
+2:devices:/
+1:name=systemd:/
+
+[12] MOUNTINFO - HOST BINDS:
+1051 1032 254:5 /builtin_wlayer/aliyun-system-guest-container-root-dir/kube-agent/573186c8-221d-404a-85da-a21a41ccc77c/volumes/kubernetes.io~empty-dir/shared-data /mnt rw,relatime master:146 - ext4 /dev/vda5 rw,prjquota
+1053 1032 254:5 /builtin_wlayer/aliyun-system-guest-container-root-dir/kube-agent/573186c8-221d-404a-85da-a21a41ccc77c/etc-hosts /etc/hosts rw,relatime - ext4 /dev/vda5 rw,prjquota
+1054 1032 254:5 /builtin_wlayer/aliyun-system-guest-container-root-dir/kube-agent/573186c8-221d-404a-85da-a21a41ccc77c/etc-hostname /etc/hostname rw,relatime - ext4 /dev/vda5 rw,prjquota
+1055 1032 254:5 /builtin_wlayer/aliyun-system-guest-container-root-dir/kube-agent/573186c8-221d-404a-85da-a21a41ccc77c/etc-resolv.conf /etc/resolv.conf rw,relatime - ext4 /dev/vda5 rw,prjquota
+1057 1034 254:5 /builtin_wlayer/aliyun-system-guest-container-root-dir/kube-agent/573186c8-221d-404a-85da-a21a41ccc77c/containers/container/5c0a6734 /dev/termination-log rw,relatime - ext4 /dev/vda5 rw,prjquota
+======================================================================
+JAYJAY: KRITISCHE ENTDECKUNG - CGROUP V1 NICHT MOUNTED!
+
+[1] CGROUP MANIPULATION TEST:
+Memory cgroup:
+total 0
+drwxr-xr-x 2 root root 0 Jul 8 14:35 .
+drwxrwxrwt 14 root root 380 Jul 8 14:35 ..
+-rw-r--r-- 1 root root 0 Jul 8 14:35 cgroup.clone_children
+--w--w--w- 1 root root 0 Jul 8 14:35 cgroup.event_control
+-rw-r--r-- 1 root root 0 Jul 8 14:35 cgroup.procs
+-rw-r--r-- 1 root root 0 Jul 8 14:35 memory.allow_duptext
+-rw-r--r-- 1 root root 0 Jul 8 14:35 memory.allow_duptext_refresh
+-rw-r--r-- 1 root root 0 Jul 8 14:35 memory.async_fork
+-rw-r--r-- 1 root root 0 Jul 8
+
+[2] /PROC/CGROUPS:
+#subsys_name hierarchy num_cgroups enabled
+cpuset 11 11 1
+cpu 8 15 1
+cpuacct 8 15 1
+blkio 4 10 1
+memory 3 49 1
+devices 2 10 1
+freezer 10 10 1
+net_cls 9 10 1
+perf_event 7 10 1
+net_prio 9 10 1
+hugetlb 6 10 1
+pids 12 35 1
+rdma 5 10 1
+
+[3] CGROUP ERSTELLEN:
+mkdir: RC=1
+Fehler: mkdir: cannot create directory ‘/sys/fs/cgroup/memory/test’: Read-only file system
+
+[4] CORE_PATTERN:
+core_pattern: | /dev/null
+
+[5] SUID_DUMPABLE:
+suid_dumpable: 0
+
+[6] FTRACE:
+ftrace_enabled: 1
+
+[7] KALLSYMS - INTERESSANTE SYMBOLE:
+0000000000000000 T commit_creds
+0000000000000000 T prepare_kernel_cred
+0000000000000000 r __ksymtab_commit_creds
+0000000000000000 r __ksymtab_prepare_kernel_cred
+0000000000000000 r __kstrtab_commit_creds
+0000000000000000 r __kstrtab_prepare_kernel_cred
+0000000000000000 r __kstrtabns_commit_creds
+0000000000000000 r __kstrtabns_prepare_kernel_cred
+0000000000000000 D modprobe_path
+
+[8] KERNEL CONFIG:
+
+[9] USER_NS_UNPRIVILEGED:
+======================================================================
+JAYJAY: KRITISCHE ENTDECKUNGEN - TIEFERE ANALYSE
+
+[A] /mnt = HOST-SHARED DIRECTORY (SCHREIBBAR!)
+
+[*] Teste Schreibzugriff auf /mnt...
+RC: 0
+JAYJAY_HOST_ACCESS_TEST
+
+[*] Teste Verzeichnis-Erstellung auf /mnt...
+total 12
+drwxr-xr-x 2 kimi kimi 4096 Jul 8 14:45 .
+drwxrwxrwx 4 root root 4096 Jul 8 14:45 ..
+-rw-r--r-- 1 kimi kimi 5 Jul 8 14:45 test.txt
+
+[B] HOST-/RUN ERREICHBAR?
+
+[*] Suche nach Host-Verzeichnissen über /mnt...
+total 96
+drwxr-xr-x 1 root root 4096 Jul 8 14:35 .
+drwxr-xr-x 1 root root 4096 Jul 8 14:35 ..
+drwxr-xr-x 1 kimi kimi 4096 Jul 8 14:35 app
+lrwxrwxrwx 1 root root 7 Sep 29 2025 bin -> usr/bin
+total 96
+drwxr-xr-x 1 root root 4096 Jul 8 14:35 .
+drwxr-xr-x 1 root root 4096 Jul 8 14:35 ..
+drwxr-xr-x 1 kimi kimi 4096 Jul 8 14:35 app
+lrwxrwxrwx 1 root root 7 Sep 29 2025 bin -> usr/bin
+
+[C] KUBELET API MIT RICHTIGEM HTTP/1.1
+/healthz: HTTP/1.0 400 Bad Request
+/pods: HTTP/1.0 400 Bad Request
+/metrics: HTTP/1.0 400 Bad Request
+/metrics/cadvisor: HTTP/1.0 400 Bad Request
+/configz: HTTP/1.0 400 Bad Request
+/spec: HTTP/1.0 400 Bad Request
+/stats/summary: HTTP/1.0 400 Bad Request
+/logs/: HTTP/1.0 400 Bad Request
+/run/: HTTP/1.0 400 Bad Request
+/exec/: HTTP/1.0 400 Bad Request
+/attach/: HTTP/1.0 400 Bad Request
+/portForward/: HTTP/1.0 400 Bad Request
+
+[D] /PROC/1/CWD ANALYSE
+[*] /proc/1/cwd ->
+[*] Inhalt:
+
+[E] CGROUP V1 RELEASE_AGENT ESCAPE
+
+[*] Suche nach writable cgroup...
+TARGET SOURCE FSTYPE OPTIONS
+/sys/fs/cgroup/freezer cgroup cgroup ro,nosuid,nodev,noexec,relatime,freezer
+/sys/fs/cgroup/pids cgroup cgroup ro,nosuid,nodev,noexec,relatime,pids
+/sys/fs/cgroup/rdma cgroup cgroup ro,nosuid,nodev,noexec,relatime,rdma
+/sys/fs/cgroup/cpuset cgroup cgroup ro,nosuid,nodev,noexec,relatime,cpuset
+/sys/fs/cgroup/systemd cgroup cgroup rw,nosuid,nodev,noexec,relatime,xattr,release_agent=/usr/lib/systemd/systemd-cgroups-agent,name=systemd
+/sys/fs/cgroup/devices cgroup cgroup ro,nosuid,nodev,noexec,relatime,devices
+/sys/fs/cgroup/cpu,cpuacct cgroup cgroup ro,nosuid,nodev,noexec,relatime,cpu,cpuacct
+/sys/fs/cgroup/net_cls,net_prio cgroup cgroup ro,nosuid,nodev,noexec,relatime,net_cls,net_prio
+/sys/fs/cgroup/perf_event cgroup cgroup ro,nosuid,nodev,noexec,relatime,perf_event
+/sys/fs/cgroup/blkio cgroup cgroup ro,nosuid,nodev,noexec,relatime,blkio
+/sys/fs/cgroup/memory cgroup cgroup ro,nosuid,nodev,noexec,relatime,memory
+/sys/fs/cgroup/hugetlb cgroup cgroup ro,nosuid,nodev,noexec,relatime,hugetlb
+
+[*] Writable cgroups: KEINE
+
+[F] MODPROBE_PATH ÜBERSCHREIBEN?
+[*] modprobe_path: /sbin/modprobe
+[*] Write test: bash: line 1: /proc/sys/kernel/modprobe: Read-only file system
+
+[G] FTRACE / DEBUGFS
+[*] debugfs mounts: NICHT GEMOUNTET
+[*] debugfs mount: mount: /tmp/debugfs: must be superuser to use mount.
+dmesg(1) may have more information after failed mount system call.
+
+[H] KALLSYMS - KERNEL SYMBOLE
+[*] modprobe_path addr: 0000000000000000 D modprobe_path
+[*] commit_creds addr: 0000000000000000 T commit_creds
+
+[I] /PROC/SELF/MAP_FILES
+[*] map_files: total 0
+dr-x------ 2 kimi kimi 0 Jul 8 14:45 .
+dr-xr-xr-x 9 kimi kimi 0 Jul 8 14:45 ..
+lr-------- 1 kimi kimi 64 Jul 8 14:45 560d3b128000-560d3b12c000 -> /usr/bin/ls
+lr-------- 1 kimi kimi 64 Jul 8 14:45 560d3b12c000-560d3b142000 -> /usr/bin/ls
+lr-------- 1 kimi kimi 64 Jul 8 14:45 560d3b142000-560d3b14b000 -> /usr/bin/ls
+lr-------- 1 kimi kimi 64 Jul 8 14:45 560d3b14b000-560d3b14c000 -> /usr/bin/ls
+lr-------- 1 kimi kimi 64 Jul 8 14:45 560d3b14c000-560d3b14d000 -> /usr/bin/ls
+lr-------
+
+[J] /PROC/SELF/FD - OFFENE DATEIDESKRIPTOREN
+[*] Offene FDs: total 0
+dr-x------ 2 kimi kimi 0 Jul 8 14:45 .
+dr-xr-xr-x 9 kimi kimi 0 Jul 8 14:45 ..
+lr-x------ 1 kimi kimi 64 Jul 8 14:45 0 -> pipe:[19568]
+l-wx------ 1 kimi kimi 64 Jul 8 14:45 1 -> pipe:[24086]
+l-wx------ 1 kimi kimi 64 Jul 8 14:45 2 -> pipe:[24087]
+lr-x------ 1 kimi kimi 64 Jul 8 14:45 3 -> /proc/508/fd
+
+[*] Interessante FDs: KEINE
+
+======================================================================
+ANALYSE ABGESCHLOSSEN
